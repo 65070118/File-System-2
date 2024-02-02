@@ -30,4 +30,4 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 | 65070135 | ปัณณวิชญ์ ปานช้าง     | Logical Volume Administration  |
 | 65070136 | ปานชีวา สุ่มมาตย์     | Archiver, Backup/Restore Tools |
 | 65070160 | พีรเดช เสือแก้วน้อย   | Files and Directories, FHS     |
-| 65070177 | ภูมิ บุตรศรีชา        | Logical Volume Administration  |
+| 65070177 | ภูมิ บุตรศรีชา        | Physical Volume Administration  |
