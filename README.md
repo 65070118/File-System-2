@@ -49,6 +49,17 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 - `mkfs -t ext4 /dev/sda1`
 
+### แหล่งอ้างอิง
+
+- [Raw device - Wikipedia](https://en.wikipedia.org/wiki/Raw_device)
+- [Raw Disk - linfo.org](https://www.linfo.org/raw_disk.html)
+- [dev-sda - Baeldung](https://www.baeldung.com/linux/dev-sda)
+- [fdisk(8) - Linux manual page](https://man7.org/linux/man-pages/man8/fdisk.8.html)
+- [FDISK - TechTarget](https://www.techtarget.com/whatis/definition/FDISK)
+- [How to Use the mkfs Command on Linux - How-To Geek](https://www.howtogeek.com/443342/how-to-use-the-mkfs-command-on-linux/)
+- [mkfs command in Linux with Examples - GeeksforGeeks](https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/)
+- [Linux Command: mkfs - Hongkiat](https://www.hongkiat.com/blog/linux-command-mkfs/)
+
 # Physical Volume Administration
 
 # Volume Group Administration
