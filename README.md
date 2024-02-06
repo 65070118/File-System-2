@@ -10,9 +10,9 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 
 ### Raw Media Devices ใน Linux คืออะไร
 
-Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็บข้อมูลที่สามารถเข้าถึงโดยตรง ที่ระดับบล็อกโดยไม่ต้องผ่านระบบไฟล์ และตอนทำงานข้อมูลจะถูกเข้าถึงโดยไม่ผ่านระบบความจำแคชและบัฟเฟอร์ของระบบปฏิบัติการ (OS)
+Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็บข้อมูลที่สามารถเข้าถึงโดยตรง ที่ระดับบล็อกโดยไม่ต้องผ่านระบบไฟล์ และตอนทำงานข้อมูลจะถูกเข้าถึงโดยไม่ผ่านระบบ Caches และ Buffers ของระบบปฏิบัติการ (OS)
 
-ตัวอย่างของอุปกรณ์จัดเก็บข้อมูลรวมถึง:
+ตัวอย่างของอุปกรณ์จัดเก็บข้อมูล:
 
 - Hard Disk Drive (HDD)
 - Solid State Drive (SSD)
@@ -41,7 +41,7 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 - `mkfs [ -V ] [ -t fstype ] [ fs-options ] filesys [ blocks ]`
 
-เราสามารถสำรวจระบบไฟล์ที่สามารถสร้างได้โดยใช้คำสั่ง `mkfs` โดยพิมพ์คำสั่งแล้วกดแท็บสองครั้ง (โดยไม่มีช่องว่างหลัง `mkfs`)
+เราสามารถดูระบบไฟล์ที่สามารถสร้างได้โดยการพิมพ์คำสั่ง  `mkfs` แล้วกดแท็บสองครั้ง (ไม่ต้องมีเว้นวรรคหลังคำสั่ง `mkfs`)
 
 ![ตัวอย่างคำสั่ง Mkfs](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2019/10/1-5.png?q=50&fit=crop&w=750&dpr=1.5)
 
