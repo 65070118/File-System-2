@@ -9,7 +9,8 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 - [Logical Volume Administration](https://github.com/65070118/File-System-3?tab=readme-ov-file#logical-volume-administration)
 - [File System Type](https://github.com/65070118/File-System-3?tab=readme-ov-file#file-system-type)
 - [Archiver, Backup/Restore Tools](https://github.com/65070118/File-System-3?tab=readme-ov-file#archiver-backuprestore-tools)
-
+- [Refferences](https://github.com/65070118/File-System-3?tab=readme-ov-file#references)
+- [สมาชิก](https://github.com/65070118/File-System-3?tab=readme-ov-file#%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%81)
 # บทคัดย่อ
 
 # Files and Directories, FHS
@@ -68,7 +69,7 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 # Archiver, Backup/Restore Tools
 
 # References
-
+### Files and Directories, FHS
 ### Raw Media Divices
 
 - Raw device - Wikipedia: https://en.wikipedia.org/wiki/Raw_device
@@ -79,6 +80,11 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 - How to Use the mkfs Command on Linux - How-To Geek: https://www.howtogeek.com/443342/how-to-use-the-mkfs-command-on-linux/
 - mkfs command in Linux with Examples - GeeksforGeeks: https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/
 - Linux Command: mkfs - Hongkiat: https://www.hongkiat.com/blog/linux-command-mkfs/
+### Physical Volume Administration
+### Volume Group Administration
+### Logical Volume Administration
+### File System Type
+### Archiver, Backup/Restore Tools
 
 # สมาชิก
 
