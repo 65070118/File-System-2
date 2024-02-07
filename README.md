@@ -51,9 +51,7 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 เราสามารถดูระบบไฟล์ที่สามารถสร้างได้โดยการพิมพ์คำสั่ง `mkfs` แล้วกดแท็บสองครั้ง (ไม่ต้องมีเว้นวรรคหลังคำสั่ง `mkfs`)
 
-<p align="center">
-  <img src="https://picsum.photos/460/300](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2019/10/1-5.png?q=50&fit=crop&w=750&dpr=1.5">
-</p>
+![ตัวอย่างคำสั่ง Mkfs](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2019/10/1-5.png?q=50&fit=crop&w=750&dpr=1.5)
 
 #### ตัวอย่างคำสั่งสร้างระบบไฟล์ ext4 ที่ /dev/sda1:
 
