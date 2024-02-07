@@ -33,7 +33,7 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 `fdisk` เป็นโปรแกรมที่ใช้สำหรับการทำอะไรต่างๆ บนพาร์ติชันดิสก์ แต่จำเป็นต้องมีสิทธิ์ root เท่านั้นถึงจะใช้คำสั่งนี้ได้
 
-## ตัวอย่างคำสั่ง `fdisk`:
+## ตัวอย่างคำสั่ง `fdisk`
 
 - `fdisk -l`: แสดง List พาร์ทิชัน
 - `fdisk -d`: ลบ Partition
@@ -45,7 +45,7 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 `mkfs` เป็นคำสั่งที่ใช้สำหรับสร้างระบบไฟล์บน Linux
 
-## รูปแบบของคำสั่ง `mkfs`:
+## รูปแบบของคำสั่ง `mkfs`
 
 - `mkfs [ -V ] [ -t fstype ] [ fs-options ] filesys [ blocks ]`
 
@@ -53,7 +53,7 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 ![ตัวอย่างคำสั่ง Mkfs](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2019/10/1-5.png?q=50&fit=crop&w=750&dpr=1.5)
 
-## ตัวอย่างคำสั่งสร้างระบบไฟล์ ext4 ที่ /dev/sda1:
+## ตัวอย่างคำสั่งสร้างระบบไฟล์ ext4 ที่ /dev/sda1
 
 - `mkfs -t ext4 /dev/sda1`
 
