@@ -16,7 +16,7 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 
 # Raw Media Devices
 
-### Raw Media Devices ใน Linux คืออะไร
+## Raw Media Devices ใน Linux คืออะไร
 
 Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็บข้อมูลที่สามารถเข้าถึงข้อมูลได้โดยตรงที่ระดับบล็อก โดยไม่ต้องผ่านระบบไฟล์ และ ตอนทำงานข้อมูลจะถูกเข้าถึงโดยไม่ผ่านระบบ Caches และ Buffers ของระบบปฏิบัติการ (OS)
 
@@ -25,15 +25,15 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 - Hard Disk Drive (HDD)
 - Solid State Drive (SSD)
 
-### /dev/sda
+## /dev/sda
 
 `/dev/sda` เป็นอุปกรณ์บล็อก(Block Device) ของอุปกรณ์จัดเก็บข้อมูลใน Folder Root ของระบบ ตัวอย่างก็ HardDisk ที่ๆคอมของเราใช้กันอยู่นั่นแหละ
 
-### Fdisk
+## Fdisk
 
 `fdisk` เป็นโปรแกรมที่ใช้สำหรับการทำอะไรต่างๆ บนพาร์ติชันดิสก์ แต่จำเป็นต้องมีสิทธิ์ root เท่านั้นถึงจะใช้คำสั่งนี้ได้
 
-#### ตัวอย่างคำสั่ง `fdisk`:
+## ตัวอย่างคำสั่ง `fdisk`:
 
 - `fdisk -l`: แสดง List พาร์ทิชัน
 - `fdisk -d`: ลบ Partition
@@ -41,11 +41,11 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 - `fdisk -v`: แสดงข้อมูล Version
 - `fdisk -m`: แสดงเมนูคำสั่งต่างๆ
 
-### Mkfs (Make File Systems)
+## Mkfs (Make File Systems)
 
 `mkfs` เป็นคำสั่งที่ใช้สำหรับสร้างระบบไฟล์บน Linux
 
-#### รูปแบบของคำสั่ง `mkfs`:
+## รูปแบบของคำสั่ง `mkfs`:
 
 - `mkfs [ -V ] [ -t fstype ] [ fs-options ] filesys [ blocks ]`
 
@@ -53,7 +53,7 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 ![ตัวอย่างคำสั่ง Mkfs](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2019/10/1-5.png?q=50&fit=crop&w=750&dpr=1.5)
 
-#### ตัวอย่างคำสั่งสร้างระบบไฟล์ ext4 ที่ /dev/sda1:
+## ตัวอย่างคำสั่งสร้างระบบไฟล์ ext4 ที่ /dev/sda1:
 
 - `mkfs -t ext4 /dev/sda1`
 
