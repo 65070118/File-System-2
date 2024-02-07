@@ -92,4 +92,3 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 |     | 65070160 | พีรเดช เสือแก้วน้อย   | Files and Directories, FHS     |
 |     | 65070177 | ภูมิ บุตรศรีชา        | Physical Volume Administration |
 
-F
