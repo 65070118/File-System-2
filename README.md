@@ -2,23 +2,15 @@
 
 Computer Organization and Operating System Assignment (Chapter: File System, Sec3)
 
-
-[Files and Directories, FHS](https://github.com/65070118/File-System-3?tab=readme-ov-file#files-and-directories-fhs)
-
-[Raw Media Devices](https://github.com/65070118/File-System-3?tab=readme-ov-file#raw-media-devices)
-
-[Physical Volume Administration](https://github.com/65070118/File-System-3?tab=readme-ov-file#physical-volume-administration)
-
-[Volume Group Administration](https://github.com/65070118/File-System-3?tab=readme-ov-file#volume-group-administration)
-
-[Logical Volume Administration](https://github.com/65070118/File-System-3?tab=readme-ov-file#logical-volume-administration)
-
-[File System Type](https://github.com/65070118/File-System-3?tab=readme-ov-file#file-system-type)
-
-[Archiver, Backup/Restore Tools](https://github.com/65070118/File-System-3?tab=readme-ov-file#archiver-backuprestore-tools)
+- [Files and Directories, FHS](https://github.com/65070118/File-System-3?tab=readme-ov-file#files-and-directories-fhs)
+- [Raw Media Devices](https://github.com/65070118/File-System-3?tab=readme-ov-file#raw-media-devices)
+- [Physical Volume Administration](https://github.com/65070118/File-System-3?tab=readme-ov-file#physical-volume-administration)
+- [Volume Group Administration](https://github.com/65070118/File-System-3?tab=readme-ov-file#volume-group-administration)
+- [Logical Volume Administration](https://github.com/65070118/File-System-3?tab=readme-ov-file#logical-volume-administration)
+- [File System Type](https://github.com/65070118/File-System-3?tab=readme-ov-file#file-system-type)
+- [Archiver, Backup/Restore Tools](https://github.com/65070118/File-System-3?tab=readme-ov-file#archiver-backuprestore-tools)
 
 # บทคัดย่อ
-
 
 # Files and Directories, FHS
 
@@ -77,18 +69,16 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 # References
 
-Raw Media Divices
+### Raw Media Divices
 
-```
-Raw device - Wikipedia: https://en.wikipedia.org/wiki/Raw_device
-Raw Disk - linfo.org: https://www.linfo.org/raw_disk.html
-dev-sda - Baeldung: https://www.baeldung.com/linux/dev-sda
-fdisk(8) - Linux manual page: https://man7.org/linux/man-pages/man8/fdisk.8.html
-FDISK - TechTarget: https://www.techtarget.com/whatis/definition/FDISK
-How to Use the mkfs Command on Linux - How-To Geek: https://www.howtogeek.com/443342/how-to-use-the-mkfs-command-on-linux/
-mkfs command in Linux with Examples - GeeksforGeeks: https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/
-Linux Command: mkfs - Hongkiat: https://www.hongkiat.com/blog/linux-command-mkfs/
-```
+- Raw device - Wikipedia: https://en.wikipedia.org/wiki/Raw_device
+- Raw Disk - linfo.org: https://www.linfo.org/raw_disk.html
+- dev-sda - Baeldung: https://www.baeldung.com/linux/dev-sda
+- fdisk(8) - Linux manual page: https://man7.org/linux/man-pages/man8/fdisk.8.html
+- FDISK - TechTarget: https://www.techtarget.com/whatis/definition/FDISK
+- How to Use the mkfs Command on Linux - How-To Geek: https://www.howtogeek.com/443342/how-to-use-the-mkfs-command-on-linux/
+- mkfs command in Linux with Examples - GeeksforGeeks: https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/
+- Linux Command: mkfs - Hongkiat: https://www.hongkiat.com/blog/linux-command-mkfs/
 
 # สมาชิก
 
