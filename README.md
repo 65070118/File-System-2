@@ -53,7 +53,7 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 ![ตัวอย่างคำสั่ง Mkfs](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2019/10/1-5.png?q=50&fit=crop&w=750&dpr=1.5)
 
-## ตัวอย่างคำสั่งสร้างระบบไฟล์ ext4 ที่ /dev/sda1:
+## ตัวอย่างคำสั่งสร้างระบบไฟล์ ext4 ที่ /dev/sda1
 
 - `mkfs -t ext4 /dev/sda1`
 
