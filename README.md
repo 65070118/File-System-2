@@ -43,22 +43,11 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 เราสามารถดูระบบไฟล์ที่สามารถสร้างได้โดยการพิมพ์คำสั่ง  `mkfs` แล้วกดแท็บสองครั้ง (ไม่ต้องมีเว้นวรรคหลังคำสั่ง `mkfs`)
 
-![ตัวอย่างคำสั่ง Mkfs](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2019/10/1-5.png?q=50&fit=crop&w=750&dpr=1.5)
+![ตัวอย่างคำสั่ง Mkfs](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2019/10/1-5.png?q=50&fit=crop&w=750&dpr=1.5#center)
 
 #### ตัวอย่างคำสั่งสร้างระบบไฟล์ ext4 ที่ /dev/sda1:
 
 - `mkfs -t ext4 /dev/sda1`
-
-### แหล่งอ้างอิง
-
-- [Raw device - Wikipedia](https://en.wikipedia.org/wiki/Raw_device)
-- [Raw Disk - linfo.org](https://www.linfo.org/raw_disk.html)
-- [dev-sda - Baeldung](https://www.baeldung.com/linux/dev-sda)
-- [fdisk(8) - Linux manual page](https://man7.org/linux/man-pages/man8/fdisk.8.html)
-- [FDISK - TechTarget](https://www.techtarget.com/whatis/definition/FDISK)
-- [How to Use the mkfs Command on Linux - How-To Geek](https://www.howtogeek.com/443342/how-to-use-the-mkfs-command-on-linux/)
-- [mkfs command in Linux with Examples - GeeksforGeeks](https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/)
-- [Linux Command: mkfs - Hongkiat](https://www.hongkiat.com/blog/linux-command-mkfs/)
 
 # Physical Volume Administration
 
@@ -72,14 +61,27 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 # References
 
+Raw Media Divices
+```
+- [Raw device - Wikipedia](https://en.wikipedia.org/wiki/Raw_device)
+- [Raw Disk - linfo.org](https://www.linfo.org/raw_disk.html)
+- [dev-sda - Baeldung](https://www.baeldung.com/linux/dev-sda)
+- [fdisk(8) - Linux manual page](https://man7.org/linux/man-pages/man8/fdisk.8.html)
+- [FDISK - TechTarget](https://www.techtarget.com/whatis/definition/FDISK)
+- [How to Use the mkfs Command on Linux - How-To Geek](https://www.howtogeek.com/443342/how-to-use-the-mkfs-command-on-linux/)
+- [mkfs command in Linux with Examples - GeeksforGeeks](https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/)
+- [Linux Command: mkfs - Hongkiat](https://www.hongkiat.com/blog/linux-command-mkfs/)
+```
+
 # สมาชิก
 
-| รูป | รหัส     | ชื่อ                  | ส่วนที่รับผิดชอบ               |
-| --- | -------- | --------------------- | ------------------------------ |
-|     | 65070117 | นัชชา เนินกร่าง       | File System Type               |
-|     | 65070118 | นันทพงศ์ วิเศษมงคลชัย | Raw Media Devices              |
-|     | 65070129 | ปรเมศวร์ โพธิ์หมุด    | Volume Group Administration    |
-|     | 65070135 | ปัณณวิชญ์ ปานช้าง     | Logical Volume Administration  |
-|     | 65070136 | ปานชีวา สุ่มมาตย์     | Archiver, Backup/Restore Tools |
-|     | 65070160 | พีรเดช เสือแก้วน้อย   | Files and Directories, FHS     |
-|     | 65070177 | ภูมิ บุตรศรีชา        | Physical Volume Administration |
+| รูป | รหัส | ชื่อ | ส่วนที่รับผิดชอบ |
+| --- | ---| --- | --- |
+|     | 65070117 | นัชชา เนินกร่าง | File System Type |
+|     | 65070118 | นันทพงศ์ วิเศษมงคลชัย | Raw Media Devices |
+|     | 65070129 | ปรเมศวร์ โพธิ์หมุด | Volume Group Administration |
+|     | 65070135 | ปัณณวิชญ์ ปานช้าง | Logical Volume Administration |
+|     | 65070136 | ปานชีวา สุ่มมาตย์ | Archiver, Backup/Restore Tools |
+|     | 65070160 | พีรเดช เสือแก้วน้อย | Files and Directories, FHS |
+|     | 65070177 | ภูมิ บุตรศรีชา | Physical Volume Administration |
+F
