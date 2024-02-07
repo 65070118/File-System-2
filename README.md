@@ -36,11 +36,11 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 ## ตัวอย่างคำสั่ง `fdisk`
 
-- `fdisk -l`: แสดง List พาร์ทิชัน
-- `fdisk -d`: ลบ Partition
-- `fdisk -n`: สร้าง Partition ใหม่
-- `fdisk -v`: แสดงข้อมูล Version
-- `fdisk -m`: แสดงเมนูคำสั่งต่างๆ
+- `fdisk -l` แสดง List พาร์ทิชัน
+- `fdisk -d` ลบ Partition
+- `fdisk -n` สร้าง Partition ใหม่
+- `fdisk -v` แสดงข้อมูล Version
+- `fdisk -m` แสดงเมนูคำสั่งต่างๆ
 
 ## Mkfs (Make File Systems)
 
