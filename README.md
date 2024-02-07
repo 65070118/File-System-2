@@ -2,7 +2,8 @@
 
 Computer Organization and Operating System Assignment (Chapter: File System, Sec3)
 
-[Files and Directories, FHS](https://github.com/65070118/File-System-3#files-and-directories-fhs)
+
+[Files and Directories, FHS](https://github.com/65070118/File-System-3?tab=readme-ov-file#files-and-directories-fhs)
 
 [Raw Media Devices](https://github.com/65070118/File-System-3?tab=readme-ov-file#raw-media-devices)
 
@@ -17,6 +18,7 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 [Archiver, Backup/Restore Tools](https://github.com/65070118/File-System-3?tab=readme-ov-file#archiver-backuprestore-tools)
 
 # บทคัดย่อ
+
 
 # Files and Directories, FHS
 
