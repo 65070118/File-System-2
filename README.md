@@ -41,9 +41,9 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 - `mkfs [ -V ] [ -t fstype ] [ fs-options ] filesys [ blocks ]`
 
-เราสามารถดูระบบไฟล์ที่สามารถสร้างได้โดยการพิมพ์คำสั่ง  `mkfs` แล้วกดแท็บสองครั้ง (ไม่ต้องมีเว้นวรรคหลังคำสั่ง `mkfs`)
+เราสามารถดูระบบไฟล์ที่สามารถสร้างได้โดยการพิมพ์คำสั่ง `mkfs` แล้วกดแท็บสองครั้ง (ไม่ต้องมีเว้นวรรคหลังคำสั่ง `mkfs`)
 
-![ตัวอย่างคำสั่ง Mkfs](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2019/10/1-5.png?q=50&fit=crop&w=750&dpr=1.5#center)
+![ตัวอย่างคำสั่ง Mkfs](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2019/10/1-5.png?q=50&fit=crop&w=750&dpr=1.5)
 
 #### ตัวอย่างคำสั่งสร้างระบบไฟล์ ext4 ที่ /dev/sda1:
 
@@ -62,6 +62,7 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 # References
 
 Raw Media Divices
+
 ```
 Raw device - Wikipedia: https://en.wikipedia.org/wiki/Raw_device
 Raw Disk - linfo.org: https://www.linfo.org/raw_disk.html
@@ -75,13 +76,14 @@ Linux Command: mkfs - Hongkiat: https://www.hongkiat.com/blog/linux-command-mkfs
 
 # สมาชิก
 
-| รูป | รหัส | ชื่อ | ส่วนที่รับผิดชอบ |
-| --- | ---| --- | --- |
-|     | 65070117 | นัชชา เนินกร่าง | File System Type |
-|     | 65070118 | นันทพงศ์ วิเศษมงคลชัย | Raw Media Devices |
-|     | 65070129 | ปรเมศวร์ โพธิ์หมุด | Volume Group Administration |
-|     | 65070135 | ปัณณวิชญ์ ปานช้าง | Logical Volume Administration |
-|     | 65070136 | ปานชีวา สุ่มมาตย์ | Archiver, Backup/Restore Tools |
-|     | 65070160 | พีรเดช เสือแก้วน้อย | Files and Directories, FHS |
-|     | 65070177 | ภูมิ บุตรศรีชา | Physical Volume Administration |
+| รูป | รหัส     | ชื่อ                  | ส่วนที่รับผิดชอบ               |
+| --- | -------- | --------------------- | ------------------------------ |
+|     | 65070117 | นัชชา เนินกร่าง       | File System Type               |
+|     | 65070118 | นันทพงศ์ วิเศษมงคลชัย | Raw Media Devices              |
+|     | 65070129 | ปรเมศวร์ โพธิ์หมุด    | Volume Group Administration    |
+|     | 65070135 | ปัณณวิชญ์ ปานช้าง     | Logical Volume Administration  |
+|     | 65070136 | ปานชีวา สุ่มมาตย์     | Archiver, Backup/Restore Tools |
+|     | 65070160 | พีรเดช เสือแก้วน้อย   | Files and Directories, FHS     |
+|     | 65070177 | ภูมิ บุตรศรีชา        | Physical Volume Administration |
+
 F
