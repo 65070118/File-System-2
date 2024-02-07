@@ -181,7 +181,7 @@ Removed "/dev/vdb3" from volume group "myvg"
 ```
 
 ## ย้าย volume group ไปยังระบบอื่น
-่เราสามารถย้าย volume group ทั้งตัวไปยังระบบอื่นได้ด้วยคำสั่งดังนี้ :
+เราสามารถย้าย volume group ทั้งตัวไปยังระบบอื่นได้ด้วยคำสั่งดังนี้ :
 
 `vgexport`
 
