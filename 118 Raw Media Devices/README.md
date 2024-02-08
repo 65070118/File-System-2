@@ -87,8 +87,6 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 # References
 
-### Raw Media Divices
-
 - Raw device - Wikipedia: https://en.wikipedia.org/wiki/Raw_device
 - Raw Disk - linfo.org: https://www.linfo.org/raw_disk.html
 - dev-sda - Baeldung: https://www.baeldung.com/linux/dev-sda
