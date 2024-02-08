@@ -292,5 +292,5 @@ vgexport -- volume group "myvg" successfully exported
 | `pvscan` | คำสั่งดู volume group ที่ถูกนำออก |
 | `vgremove` | คำสั่งลบ volume group |
 
-Refferences
+# Refferences
 - Managing LVM volume groups: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_logical_volumes/managing-lvm-volume-groups_configuring-and-managing-logical-volumes#creating-lvm-volume-group_managing-lvm-volume-groups
