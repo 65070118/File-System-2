@@ -2,7 +2,8 @@
 
 ## Raw Media Devices ใน Linux คืออะไร?
 
-Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็บข้อมูลที่สามารถเข้าถึงข้อมูลได้โดยตรงที่ระดับบล็อก โดยไม่ต้องผ่านระบบไฟล์ และ ตอนทำงานข้อมูลจะถูกเข้าถึงโดยไม่ผ่านระบบ Caches และ Buffers ของระบบปฏิบัติการ (OS)
+Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็บข้อมูลที่สามารถเข้าถึงข้อมูลได้โดยตรงที่ระดับบล็อก โดยไม่ต้องผ่านระบบไฟล์
+และ ตอนทำงานข้อมูลจะถูกเข้าถึงโดยไม่ผ่านระบบ Caches และ Buffers ของระบบปฏิบัติการ (OS)
 
 ตัวอย่างของอุปกรณ์จัดเก็บข้อมูล:
 
@@ -11,7 +12,8 @@ Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็
 
 ## /dev/sda
 
-`/dev/sda` เป็นอุปกรณ์บล็อก(Block Device) ของอุปกรณ์จัดเก็บข้อมูลใน Folder Root ของระบบ ตัวอย่างก็ HardDisk ที่ๆคอมของเราใช้กันอยู่นั่นแหละ
+`/dev/sda` เป็นอุปกรณ์บล็อก(Block Device) ของอุปกรณ์จัดเก็บข้อมูลใน Folder Root ของระบบ ตัวอย่างก็ HardDisk
+ที่ๆคอมของเราใช้กันอยู่นั่นแหละ
 
 ## Fdisk
 
@@ -93,6 +95,8 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 - fdisk(8) - Linux manual page: https://man7.org/linux/man-pages/man8/fdisk.8.html
 - FDISK - TechTarget: https://www.techtarget.com/whatis/definition/FDISK
 - fdisk Linux Command - Saixiii: https://saixiii.com/fdisk-linux-command/
-- How to Use the mkfs Command on Linux - How-To Geek: https://www.howtogeek.com/443342/how-to-use-the-mkfs-command-on-linux/
-- mkfs command in Linux with Examples - GeeksforGeeks: https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/
+- How to Use the mkfs Command on Linux - How-To
+  Geek: https://www.howtogeek.com/443342/how-to-use-the-mkfs-command-on-linux/
+- mkfs command in Linux with Examples -
+  GeeksforGeeks: https://www.geeksforgeeks.org/mkfs-command-in-linux-with-examples/
 - Linux Command: mkfs - Hongkiat: https://www.hongkiat.com/blog/linux-command-mkfs/
