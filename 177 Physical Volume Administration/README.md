@@ -1,6 +1,6 @@
 # Physical Volume
 
-คือ ที่เก็บข้อมูลทางกายภาพใดๆ เช่น Hard disk หรือ Disk Partition ที่อยู่ในชั้นล่างสุดของ Logical Volume Management(LVM)
+คือ หน่วยเก็บข้อมูล Physical storage unit ของ LVM logical Volume  เป็น block device ที่เก็บข้อมูลทางกายภาพใดๆ เช่น Hard disk หรือ Disk Partition ที่อยู่ในชั้นล่างสุดของ Logical Volume Management(LVM)
 
 ![ตัวอย่าง](https://cdn.thegeekdiary.com/wp-content/uploads/2014/10/LVM-basic-structure.png)
 
@@ -9,6 +9,9 @@
 >[!NOTE]
 > Partition คือ การแบ่งพื้นที่ออกเป็นส่วนๆ
 >
+# เค้าโครงของ Physical Volume
+
+![ตัวอย่าง](https://access.redhat.com/webassets/avalon/d/Red_Hat_Enterprise_Linux-9-Configuring_and_managing_logical_volumes-en-US/images/8a27e9aae1f828bbdd43c54090d5ab15/physical-volume-layout.png)
 
 # การสร้าง Physical Volume
 
@@ -76,7 +79,12 @@
           PV  /dev/vdb2                      lvm2 [1.00 GiB]
           PV  /dev/vdb3                      lvm2 [1.00 GiB]
         ```
+## การลบ Physical Volume
+
+ถ้า
 
 ## References
-https://access.redhat.com/documentation/th-th/red_hat_enterprise_linux/8/html/configuring_and_managing_logical_volumes/managing-lvm-physical-volumes_configuring-and-managing-logical-volumes
+- https://access.redhat.com/documentation/th-th/red_hat_enterprise_linux/8/html/configuring_and_managing_logical_volumes/managing-lvm-physical-volumes_configuring-and-managing-logical-volumes
+
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_logical_volumes/managing-lvm-physical-volumes_configuring-and-managing-logical-volumes
 
