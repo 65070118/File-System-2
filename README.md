@@ -392,7 +392,7 @@ vgexport -- volume group "myvg" successfully exported
 | `lvchange` | คำสั่งหยุดการทำงาน logical volume |
 | `vgexport` | คำสั่งเอา volume group ออกไปจากระบบ |
 | `vgimport` | คำสั่งสร้าง volume group ที่ถูก export ไปใช้งานในระบบไหม่ |
-| `umount` | คำสั่งถอนการติดตั้ง logical volume |
+| `umount` | คำสั่งถอนการติดตั้ง file system |
 | `mount` | คำสั่งติดตั้ง file system |
 | `vgchange` | คำสั่งเปิดหรือปิดการทำงานของ logical volume ทั้งหมด ใน volume group |
 | `pvscan` | คำสั่งดู volume group ที่ถูกนำออก |
