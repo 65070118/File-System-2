@@ -2,13 +2,13 @@
 
 Computer Organization and Operating System Assignment (Chapter: File System, Sec3)
 
-- [Files and Directories, FHS](https://github.com/65070118/File-System-3?tab=readme-ov-file#files-and-directories-fhs)
-- [Raw Media Devices](https://github.com/65070118/File-System-3?tab=readme-ov-file#raw-media-devices)
+- [Files and Directories, FHS](https://github.com/65070118/File-System-3/tree/main/160%20Files%20and%20Directories%2C%20FHS)
+- [Raw Media Devices](https://github.com/65070118/File-System-3/tree/main/118%20Raw%20Media%20Devices)
 - [Physical Volume Administration](https://github.com/65070118/File-System-3/tree/main/135%20Physical%20Volume%20Administration)
 - [Volume Group Administration](https://github.com/65070118/File-System-3/tree/main/129%20Volume%20Group%20Administration)
-- [Logical Volume Administration](https://github.com/65070118/File-System-3?tab=readme-ov-file#logical-volume-administration)
-- [File System Type](https://github.com/65070118/File-System-3?tab=readme-ov-file#file-system-type)
-- [Archiver, Backup/Restore Tools](https://github.com/65070118/File-System-3?tab=readme-ov-file#archiver-backuprestore-tools)
+- [Logical Volume Administration](https://github.com/65070118/File-System-3/tree/main/177%20Logical%20Volume%20Administration)
+- [File System Type](https://github.com/65070118/File-System-3/tree/main/117%20File%20System%20Type)
+- [Archiver, Backup/Restore Tools](https://github.com/65070118/File-System-3/tree/main/136%20Archiver%2C%20Backup_Restore%20Tools)
 - [Refferences](https://github.com/65070118/File-System-3?tab=readme-ov-file#references)
 - [สมาชิก](https://github.com/65070118/File-System-3?tab=readme-ov-file#%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%81)
 
@@ -111,9 +111,13 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 ## Volume group คืออะไร?
 
+<<<<<<< Updated upstream
 Volume group คือ กลุ่มของ physical volumes โดยจะทำการสร้างพูลของพื้นที่บนดิสก์ที่สามารถจัดสรร logical volumes ได้
 โดยในแต่ละ volume group จะมีพื้นที่ดิสก์ที่พร้อมใช้งานสำหรับการแบ่ง โดยจะถูกแบ่งออกเป็นส่วนๆ ที่มีขนาดคงที่เรียกว่า
 extents
+=======
+Volume group คือ กลุ่มของ physical volumes โดยจะทำการสร้างพูลของพื้นที่บนดิสก์ที่สามารถจัดสรร logical volumes ได้ โดยในแต่ละ volume group จะมีพื้นที่ดิสก์ที่พร้อมใช้งานสำหรับการแบ่ง โดยจะถูกแบ่งออกเป็นส่วนๆ ที่มีขนาดคงที่เรียกว่า extents
+>>>>>>> Stashed changes
 
 - extents คือ หน่วยพื้นที่ที่เล็กที่สุดที่สามารถจัดสรรได้ ภายใน physical volume โดยสามารถเรียกได้อีกแบบว่า physical
   extents
@@ -124,9 +128,13 @@ extents
 
 ## การสร้าง Volume Groups
 
+<<<<<<< Updated upstream
 ในการสร้าง volume group ที่ชื่อ `myvg` โดยใช้ physical volumes  `/dev/vdb1` และ `/dev/vdb2` เป็นค่าเริ่มต้น เมื่อใช้
 physical volumes ในการสร้าง volume group จะทำการแบ่งพื้นที่บนดิสก์เป็น extents ขนาด 4MB โดยขนาดของ extents นี้คือ
 ขนาดขั้นต่ำที่สามารถเพิ่มหรือลดขนาด logical volumes ได้
+=======
+ในการสร้าง volume group ที่ชื่อ `myvg` โดยใช้ physical volumes `/dev/vdb1` และ `/dev/vdb2` เป็นค่าเริ่มต้น เมื่อใช้ physical volumes ในการสร้าง volume group จะทำการแบ่งพื้นที่บนดิสก์เป็น extents ขนาด 4MB โดยขนาดของ extents นี้คือ ขนาดขั้นต่ำที่สามารถเพิ่มหรือลดขนาด logical volumes ได้
+>>>>>>> Stashed changes
 
 โดยขนาดของ extents สามารถแก้ไขได้โดยการเพิ่ม `-s` ไปที่คำสั่ง `vgcreate` โดยจำนวนของ extents ไม่มีผลกระทบต่อการทำงานของ
 I/O ของ physical volumes และเราสามารถจำกัดจำนวนของ physical หรือ logical volumes โดยทำการเพิ่ม `-p` และ `-l`
@@ -172,9 +180,13 @@ Volume group "myvg" successfully created.
  myvg   2    0   0   wz-n  159.99g 159.99g
 ```
 
+<<<<<<< Updated upstream
 - ใช้คำสั่ง `vgdisplay` โดยคำสั่งนี้จะทำการแสดงคุณสมบัติของ volume group เช่น ขนาด extents จำนวนของ physical volumes
   และตัวเลือกอื่น ๆ ที่ไม่สามารถแก้ไขค่าได้ ตัวอย่างต่อไปนี้คือการแสดงเอาต์พุตของคำสั่ง `vgdisplay` สำหรับ volume
   group `myvg` หากต้องการแสดง volume group ที่มีอยู่ทั้งหมด ไม่ต้องระบุชื่อของ volume group :
+=======
+- ใช้คำสั่ง `vgdisplay` โดยคำสั่งนี้จะทำการแสดงคุณสมบัติของ volume group เช่น ขนาด extents จำนวนของ physical volumes และตัวเลือกอื่น ๆ ที่ไม่สามารถแก้ไขค่าได้ ตัวอย่างต่อไปนี้คือการแสดงเอาต์พุตของคำสั่ง `vgdisplay` สำหรับ volume group `myvg` หากต้องการแสดง volume group ที่มีอยู่ทั้งหมด ไม่ต้องระบุชื่อของ volume group :
+>>>>>>> Stashed changes
 
 ```
 # vgdisplay myvg
@@ -188,7 +200,11 @@ Volume group "myvg" successfully created.
 [..]
 ```
 
+<<<<<<< Updated upstream
 - ใช้คำสั่ง `vgscan`  โดยคำสั่งนี้จะทำการสแกนหา volume group ในอุปกรณ์นี้ :
+=======
+- ใช้คำสั่ง `vgscan` โดยคำสั่งนี้จะทำการสแกนหา volume group ในอุปกรณ์นี้ :
+>>>>>>> Stashed changes
 
 ```
 # vgscan
@@ -212,6 +228,7 @@ Volume group "myvg" successfully renamed to "myvg1"
 
 ## การรวม Volume Groups
 
+<<<<<<< Updated upstream
 ในการรวมสอง volume group เข้าด้วยกัน จะใช้คำสั่ง `vgmerge` โดยเราสามารถรวม "source" volume ที่ยังไม่ถูกใช้งาน กับ "
 destination" volume ที่ยังไม่ถูกใช้งานหรือกำลังใช้งานอยู่ได้ ถ้า physical extents ของ volumes ทั้งสองตัวมีขนาดเท่ากัน
 จะสรุปได้ว่าทั้ง physical และ logical volumes มีขนาดพอดีกับ destination volume ที่จำกัดเอาไว้
@@ -220,6 +237,13 @@ destination" volume ที่ยังไม่ถูกใช้งานหร
 
 - ทำการรวม volume group database ที่ยังไม่ถูกใช้งาน กับ volume group `myvg` ที่ยังไม่ถูกใช้งานหรือกำลังใช้งานอยู่ได้
   โดยให้ข้อมูลรันไทม์แบบละเอียด
+=======
+ในการรวมสอง volume group เข้าด้วยกัน จะใช้คำสั่ง `vgmerge` โดยเราสามารถรวม "source" volume ที่ยังไม่ถูกใช้งาน กับ "destination" volume ที่ยังไม่ถูกใช้งานหรือกำลังใช้งานอยู่ได้ ถ้า physical extents ของ volumes ทั้งสองตัวมีขนาดเท่ากัน จะสรุปได้ว่าทั้ง physical และ logical volumes มีขนาดพอดีกับ destination volume ที่จำกัดเอาไว้
+
+### การเตรียมการเบื้องต้น
+
+- ทำการรวม volume group database ที่ยังไม่ถูกใช้งาน กับ volume group `myvg` ที่ยังไม่ถูกใช้งานหรือกำลังใช้งานอยู่ได้ โดยให้ข้อมูลรันไทม์แบบละเอียด
+>>>>>>> Stashed changes
 
 ```
 # vgmerge -v myvg databases
@@ -227,6 +251,7 @@ destination" volume ที่ยังไม่ถูกใช้งานหร
 
 ## การลบ Physical Volumes ออกจาก Volume Group
 
+<<<<<<< Updated upstream
 ในการลบ physical volumes ที่ไม่ได้ถูกใช้ออกจาก volume group จะใช้คำสั่ง `vgreduce` โดยคำสั่ง `vgreduce`
 จะทำการลดความจุของ volume group โดยทำการลบ physical volumes ที่ไม่ได้ถูกใช้งานตั้งแต่หนึ่งตัวขึ้นไป
 โดยการใช้คำสั่งนี้จะทำให้ physical volumes ที่ไม่ได้ถูกใช้งานใน volume group นี้ถูกลบออกไป เพือนำไปใช้ใน volume groups
@@ -236,6 +261,13 @@ destination" volume ที่ยังไม่ถูกใช้งานหร
 
 &nbsp;1. ถ้า physical volume ยังถูกใช้งานอยู่ ให้ทำการย้ายข้อมูลไปยัง physical volume อื่นที่อยู่ใน volume group
 เดียวกัน :
+=======
+ในการลบ physical volumes ที่ไม่ได้ถูกใช้ออกจาก volume group จะใช้คำสั่ง `vgreduce` โดยคำสั่ง `vgreduce` จะทำการลดความจุของ volume group โดยทำการลบ physical volumes ที่ไม่ได้ถูกใช้งานตั้งแต่หนึ่งตัวขึ้นไป โดยการใช้คำสั่งนี้จะทำให้ physical volumes ที่ไม่ได้ถูกใช้งานใน volume group นี้ถูกลบออกไป เพือนำไปใช้ใน volume groups อื่น หรือ ถูกลบออกจากระบบไปเลย
+
+### การเตรียมการเบื้องต้น
+
+&nbsp;1. ถ้า physical volume ยังถูกใช้งานอยู่ ให้ทำการย้ายข้อมูลไปยัง physical volume อื่นที่อยู่ใน volume group เดียวกัน :
+>>>>>>> Stashed changes
 
 ```
 # pvmove /dev/vdb3
@@ -270,7 +302,11 @@ destination" volume ที่ยังไม่ถูกใช้งานหร
   /dev/vdb3: Moved: 100.00%
 ```
 
+<<<<<<< Updated upstream
 &nbsp;3. ลบ physical volume  `dev/vdb3` จาก volume group :
+=======
+&nbsp;3. ลบ physical volume `dev/vdb3` จาก volume group :
+>>>>>>> Stashed changes
 
 ```
 # vgreduce myvg /dev/vdb3
@@ -293,15 +329,23 @@ Removed "/dev/vdb3" from volume group "myvg"
 
 ถ้า physical volume ที่ยังมีพื่นที่ที่ยังไม่ถูกใช้งานเหลือ สามารถสร้าง volume group ใหม่ได้โดยไม่ต้องเพิ่มดิสก์ใหม่
 
+<<<<<<< Updated upstream
 ในการตั้งค่าเริ่มต้น, volume group ที่ชื่อว่า `myvg` ประกอบไปด้วย `dev/vdb1`, `/dev/vb2` และ `dev/vdb3`
 หลังจากเตรียมการเสร็จ จะได้ volume group ที่ชื่อว่า `myvg` ประกอบไปด้วย `dev/vdb1`และ `/dev/vb2` และ volume group
 ที่ชื่อว่า `yourvg` จะประกอบไปด้วย `dev/vdb3`
+=======
+ในการตั้งค่าเริ่มต้น, volume group ที่ชื่อว่า `myvg` ประกอบไปด้วย `dev/vdb1`, `/dev/vb2` และ `dev/vdb3` หลังจากเตรียมการเสร็จ จะได้ volume group ที่ชื่อว่า `myvg` ประกอบไปด้วย `dev/vdb1`และ `/dev/vb2` และ volume group ที่ชื่อว่า `yourvg` จะประกอบไปด้วย `dev/vdb3`
+>>>>>>> Stashed changes
 
 ### ข้อกำหนดเบื้องต้น
 
 - มีพื้นที่เพียงพอภายใน volume group โดยใช้คำสั่ง `vgscan` เพื่อตรวจสอบว่ามีพื้นที่เหลือเท่าไหร่ใน volume group
+<<<<<<< Updated upstream
 - จะขึ้นอยู่กับความจุที่ยังไม่ได้ถูกใช้งานใน physical volume ที่มีอยู่ ให้ย้าย physical extents ที่ใช้ทั้งหมดไปยัง
   physical volume อื่น โดยใช้คำสั่ง `pvmove`
+=======
+- จะขึ้นอยู่กับความจุที่ยังไม่ได้ถูกใช้งานใน physical volume ที่มีอยู่ ให้ย้าย physical extents ที่ใช้ทั้งหมดไปยัง physical volume อื่น โดยใช้คำสั่ง `pvmove`
+>>>>>>> Stashed changes
 
 ### การเตรียมการเบื้องต้น
 
@@ -313,8 +357,12 @@ Removed "/dev/vdb3" from volume group "myvg"
 ```
 
 > [!NOTE]
+<<<<<<< Updated upstream
 > ถ้ามี logical volume ถูกสร้างไว้แล้วใช้งานอยู่ใน volume group ที่มีอยู่ ให้ใช้คำสั่งตามนี้เพื่อหยุดการทำงานของ logical
 > volume :
+=======
+> ถ้ามี logical volume ถูกสร้างไว้แล้วใช้งานอยู่ใน volume group ที่มีอยู่ ให้ใช้คำสั่งตามนี้เพื่อหยุดการทำงานของ logical volume :
+>>>>>>> Stashed changes
 
 ```
 # lvchange -a n /dev/myvg/mylv
@@ -425,8 +473,12 @@ vgexport -- volume group "myvg" successfully exported
 
 ### การเตรียมการเบื้องต้น
 
+<<<<<<< Updated upstream
 &nbsp;1. หากมี volume group อยู่ในสภาพแวดล้อมแบบคลัสเตอร์ ให้หยุดการล็อคพื้นที่ของ volume group บนโหนดอื่นทั้งหมด
 โดยใช้คำสั่งต่อไปนี้บนโหนดทั้งหมด ยกเว้นโหนดที่คุณกำลังดำเนินการลบ:
+=======
+&nbsp;1. หากมี volume group อยู่ในสภาพแวดล้อมแบบคลัสเตอร์ ให้หยุดการล็อคพื้นที่ของ volume group บนโหนดอื่นทั้งหมด โดยใช้คำสั่งต่อไปนี้บนโหนดทั้งหมด ยกเว้นโหนดที่คุณกำลังดำเนินการลบ:
+>>>>>>> Stashed changes
 
 ```
 # vgchange --lockstop vg-name
@@ -444,14 +496,22 @@ vgexport -- volume group "myvg" successfully exported
 ### Keyword
 
 | Keywords       | Description                                                                                                                            |
+<<<<<<< Updated upstream
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------|
+=======
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+>>>>>>> Stashed changes
 | `Volume group` | กลุ่มของ physical volumes ที่มีไว้แบ่งพื้นที่บนดิสก์ไว้จัดสรร logical volume โดยจะแบ่งดิสก์ออกเป็นส่วนๆ ที่มีขนาดคงที่เรียกว่า extents |
 | `Extents`      | หน่วยพื้นที่ที่เล็กที่สุดที่สามารถจัดสรรได้                                                                                            |
 
 ### Command
 
 | Command     | Description                                                         |
+<<<<<<< Updated upstream
 |-------------|---------------------------------------------------------------------|
+=======
+| ----------- | ------------------------------------------------------------------- |
+>>>>>>> Stashed changes
 | `vgcreate`  | คำสั่งสร้าง volume group                                            |
 | `vgs`       | คำสั่งแสดงข้อมูลที่สามารถกำหนดค่าได้แบบหนึ่งบรรทัดต่อ volume group  |
 | `vgdisplay` | คำสั่งแสดงคุณสมบัติของ volume group ที่ไม่สามารถแก้ไขค่าได้         |
@@ -501,8 +561,12 @@ vgexport -- volume group "myvg" successfully exported
 
 ### Volume Group Administration
 
+<<<<<<< Updated upstream
 - Managing LVM volume
   groups: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_logical_volumes/managing-lvm-volume-groups_configuring-and-managing-logical-volumes#creating-lvm-volume-group_managing-lvm-volume-groups
+=======
+- Managing LVM volume groups: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_logical_volumes/managing-lvm-volume-groups_configuring-and-managing-logical-volumes#creating-lvm-volume-group_managing-lvm-volume-groups
+>>>>>>> Stashed changes
 
 ### Logical Volume Administration
 
@@ -521,4 +585,7 @@ vgexport -- volume group "myvg" successfully exported
 |     | 65070136 | ปานชีวา สุ่มมาตย์     | Archiver, Backup/Restore Tools |
 |     | 65070160 | พีรเดช เสือแก้วน้อย   | Files and Directories, FHS     |
 |     | 65070177 | ภูมิ บุตรศรีชา        | Logical Volume Administration  |
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
