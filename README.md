@@ -4,7 +4,7 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 
 - [Files and Directories, FHS](https://github.com/65070118/File-System-3?tab=readme-ov-file#files-and-directories-fhs)
 - [Raw Media Devices](https://github.com/65070118/File-System-3?tab=readme-ov-file#raw-media-devices)
-- [Physical Volume Administration](https://github.com/65070118/File-System-3?tab=readme-ov-file#physical-volume-administration)
+- [Physical Volume Administration](https://github.com/65070118/File-System-3/tree/main/135%20Physical%20Volume%20Administration)
 - [Volume Group Administration](https://github.com/65070118/File-System-3/tree/main/129%20Volume%20Group%20Administration)
 - [Logical Volume Administration](https://github.com/65070118/File-System-3?tab=readme-ov-file#logical-volume-administration)
 - [File System Type](https://github.com/65070118/File-System-3?tab=readme-ov-file#file-system-type)
@@ -154,7 +154,7 @@ Volume group "myvg" successfully created.
  myvg   2    0   0   wz-n  159.99g 159.99g
 ```
 
-- ใช้คำสั่ง `vgdisplay` โดยคำสั่งนี้จะทำการแสดงคุณสมบัติของ volume group เช่น ขนาด extents จำนวนของ physical volumes และตัวเลือกอื่น ๆ ที่ไม่สามารถแ้ไขค่าได้ ตัวอย่างต่อไปนี้คือการแสดงเอาต์พุตของคำสั่ง `vgdisplay` สำหรับ volume group `myvg` หากต้องการแสดง volume group ที่มีอยู่ทั้งหมด ไม่ต้องระบุชื่อของ volume group :
+- ใช้คำสั่ง `vgdisplay` โดยคำสั่งนี้จะทำการแสดงคุณสมบัติของ volume group เช่น ขนาด extents จำนวนของ physical volumes และตัวเลือกอื่น ๆ ที่ไม่สามารถแก้ไขค่าได้ ตัวอย่างต่อไปนี้คือการแสดงเอาต์พุตของคำสั่ง `vgdisplay` สำหรับ volume group `myvg` หากต้องการแสดง volume group ที่มีอยู่ทั้งหมด ไม่ต้องระบุชื่อของ volume group :
 ```
 # vgdisplay myvg
   --- Volume group ---
@@ -199,7 +199,7 @@ Volume group "myvg" successfully renamed to "myvg1"
 ในการลบ physical volumes ที่ไม่ได้ถูกใช้ออกจาก volume group จะใช้คำสั่ง `vgreduce` โดยคำสั่ง `vgreduce` จะทำการลดความจุของ volume group โดยทำการลบ physical volumes ที่ไม่ได้ถูกใช้งานตั้งแต่หนึ่งตัวขึ้นไป โดยการใช้คำสั่งนี้จะทำให้ physical volumes ที่ไม่ได้ถูกใช้งานใน volume group นี้ถูกลบออกไป เพือนำไปใช้ใน volume groups อื่น หรือ ถูกลบออกจากระบบไปเลย
 
 ### การเตรียมการเบื้องต้น
-&nbsp;1. ถ้า physical volume ยังถูกใช้งานอยู่ ให้ทำการย้ายข้อมูลไปยัง physical volume อื่นทีอยู่ใน volume group เดียวกัน :
+&nbsp;1. ถ้า physical volume ยังถูกใช้งานอยู่ ให้ทำการย้ายข้อมูลไปยัง physical volume อื่นที่อยู่ใน volume group เดียวกัน :
 ```
 # pvmove /dev/vdb3
   /dev/vdb3: Moved: 2.0%
@@ -241,9 +241,9 @@ Removed "/dev/vdb3" from volume group "myvg"
 ```
 # pvs
   PV           VG    Fmt   Attr   PSize        PFree      Used
-  /dev/vdb1 myvg  lvm2   a--    1020.00m    0          1020.00m
-  /dev/vdb2 myvg  lvm2   a--    1020.00m    0          1020.00m
-  /dev/vdb3   	    lvm2   a--    1020.00m   1008.00m    12.00m
+  /dev/vdb1    myvg  lvm2   a--    1020.00m    0          1020.00m
+  /dev/vdb2    myvg  lvm2   a--    1020.00m    0          1020.00m
+  /dev/vdb3    	     lvm2   a--    1020.00m   1008.00m    12.00m
 ```
 
 ## การแบ่ง Volume Group
@@ -281,9 +281,9 @@ Removed "/dev/vdb3" from volume group "myvg"
 ```
 # pvs
   PV           VG      Fmt   Attr   PSize        PFree      Used
-  /dev/vdb1 myvg   lvm2   a--    1020.00m    0          1020.00m
-  /dev/vdb2 myvg   lvm2   a--    1020.00m    0          1020.00m
-  /dev/vdb3 yourvg lvm2   a--    1020.00m   1008.00m    12.00m
+  /dev/vdb1   myvg     lvm2   a--    1020.00m    0          1020.00m
+  /dev/vdb2   myvg     lvm2   a--    1020.00m    0          1020.00m
+  /dev/vdb3  yourvg    lvm2   a--    1020.00m   1008.00m    12.00m
 ```
 
 ## ย้าย volume group ไปยังระบบอื่น
@@ -291,10 +291,11 @@ Removed "/dev/vdb3" from volume group "myvg"
 
 `vgexport`
 
-&nbsp;&nbsp;&nbsp;ใช้คำสั่งนี้บนระบบที่มีอยู่ เพื่อทำให้ volume group ที่ไม่ได้ใช้งาน ไม่สามารถเข้าถึงระบบได้ เมื่อ volume group ไม่สามารถเข้าถึงในระบบได้ เราสามารถถอด physical volumes ของมันออกได้
+&nbsp;&nbsp;&nbsp;ใช้คำสั่งนี้บนระบบที่มีอยู่ เพื่อทำให้ volume group ที่ไม่ได้ใช้งานไม่สามารถเข้าถึงในระบบได้ เมื่อ volume group ไม่สามารถเข้าถึงในระบบได้ เราสามารถถอด physical volumes ของมันออกได้
 
 `vgimport`
-&nbsp;&nbsp;&nbsp;ใช้คำสั่งนี้บนระบบทอื่น เพื่อสร้าง volume group ที่ไม่ได้ใช้งาน ในระบบเก่า สามารถเข้าถึงได้ในระบบใหม่
+
+&nbsp;&nbsp;&nbsp;ใช้คำสั่งนี้บนระบบอื่น เพื่อสร้าง volume group ที่ไม่ได้ใช้งาน ในระบบเก่า สามารถเข้าถึงได้ในระบบใหม่
 
 ### ข้อกำหนดเบื้องต้น
 - ต้องไม่มีผู้ใช้เข้าถึงไฟล์บน volume group ที่ใช้งานอยู่ใน volume group ที่คุณกำลังจะย้าย
@@ -365,6 +366,38 @@ vgexport -- volume group "myvg" successfully exported
 # vgremove vg-name
   Volume group "vg-name" successfully removed
 ```
+
+## Summary
+### Keyword
+| Keywords | Description |
+| --- | --- |
+| `Volume group` | กลุ่มของ physical volumes ที่มีไว้แบ่งพื้นที่บนดิสก์ไว้จัดสรร logical volume โดยจะแบ่งดิสก์ออกเป็นส่วนๆ ที่มีขนาดคงที่เรียกว่า extents |
+| `Extents` | หน่วยพื้นที่ที่เล็กที่สุดที่สามารถจัดสรรได้ |
+
+### Command
+| Command | Description |
+| --- | --- |
+| `vgcreate` | คำสั่งสร้าง volume group |
+| `vgs` | คำสั่งแสดงข้อมูลที่สามารถกำหนดค่าได้แบบหนึ่งบรรทัดต่อ volume group |
+| `vgdisplay` | คำสั่งแสดงคุณสมบัติของ volume group ที่ไม่สามารถแก้ไขค่าได้ |
+| `vgscan` | คำสั่งสแกนหา volume group ในอุปกรณ์นี้ |
+| `vgextend` | คำสั่งเพิ่มความจุของ volume group |
+| `vgrename` | คำสั่งเปลี่ยนชื่อของ volume group ที่มีอยู่ |
+| `vgmerge` | คำสั่งรวม volume group เข้าด้วยกัน |
+| `pvmove` | คำสั่งย้าย physical volume |
+| `pvcreate` | คำสั่งสร้าง physical volume |
+| `vgreduce` | คำสั่งลบ physical volume |
+| `pvs` | คำสั่งตรวจสอบข้อมูล physical volume |
+| `vgsplit` | คำสั่งแบ่ง volume group |
+| `lvchange` | คำสั่งหยุดการทำงาน logical volume |
+| `vgexport` | คำสั่งเอา volume group ออกไปจากระบบ |
+| `vgimport` | คำสั่งสร้าง volume group ที่ถูก export ไปใช้งานในระบบไหม่ |
+| `umount` | คำสั่งถอนการติดตั้ง logical volume |
+| `mount` | คำสั่งติดตั้ง file system |
+| `vgchange` | คำสั่งเปิดหรือปิดการทำงานของ logical volume ทั้งหมด ใน volume group |
+| `pvscan` | คำสั่งดู volume group ที่ถูกนำออก |
+| `vgremove` | คำสั่งลบ volume group |
+
 
 
 # Logical Volume Administration
