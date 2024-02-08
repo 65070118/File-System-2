@@ -1,6 +1,6 @@
 # Raw Media Devices
 
-## Raw Media Devices ใน Linux คืออะไร
+## Raw Media Devices ใน Linux คืออะไร?
 
 Raw Media Devices ใน Linux คือ อุปกรณ์จัดเก็บข้อมูลที่สามารถเข้าถึงข้อมูลได้โดยตรงที่ระดับบล็อก โดยไม่ต้องผ่านระบบไฟล์ และ ตอนทำงานข้อมูลจะถูกเข้าถึงโดยไม่ผ่านระบบ Caches และ Buffers ของระบบปฏิบัติการ (OS)
 
