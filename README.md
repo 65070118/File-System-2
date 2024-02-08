@@ -4,9 +4,9 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 
 - [Files and Directories, FHS](https://github.com/65070118/File-System-3/tree/main/160%20Files%20and%20Directories%2C%20FHS)
 - [Raw Media Devices](https://github.com/65070118/File-System-3/tree/main/118%20Raw%20Media%20Devices)
-- [Physical Volume Administration](https://github.com/65070118/File-System-3/tree/main/135%20Physical%20Volume%20Administration)
+- [Physical Volume Administration](https://github.com/65070118/File-System-3/tree/main/177%20Physical%20Volume%20Administration)
 - [Volume Group Administration](https://github.com/65070118/File-System-3/tree/main/129%20Volume%20Group%20Administration)
-- [Logical Volume Administration](https://github.com/65070118/File-System-3/tree/main/177%20Logical%20Volume%20Administration)
+- [Logical Volume Administration](https://github.com/65070118/File-System-3/tree/main/135%20Logical%20Volume%20Administration)
 - [File System Type](https://github.com/65070118/File-System-3/tree/main/117%20File%20System%20Type)
 - [Archiver, Backup/Restore Tools](https://github.com/65070118/File-System-3/tree/main/136%20Archiver%2C%20Backup_Restore%20Tools)
 - [Refferences](https://github.com/65070118/File-System-3?tab=readme-ov-file#references)
