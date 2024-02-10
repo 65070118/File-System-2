@@ -4,7 +4,6 @@
 ## ประเภทของไฟล์ใน Linux
 1. Regular files
   เป็นไฟล์ทั่วไปที่พบบ่อยที่สุด เช่น ไฟล์รูปภาพ, โปรแกรมไฟล์
-  ตัวอย่าง
   ```
   $ touch linuxcareer.com
   $ ls -ld linuxcareer.com 
@@ -18,7 +17,6 @@
   
 2. Directories
   เป็นไฟล์ที่พบได้บ่อยใน Linux ใช้เก็บ Subdirectories สามารถใช้คำสั่ง  mkdir ในการสร้างไดเร็กทอรี
-  ตัวอย่าง 
   ```
   $ mkdir FileTypes
   $ ls -ld FileTypes/
@@ -38,10 +36,47 @@
   ```
 
 3. Character device
+  ทั้ง character device และ block device เป็นอุปกรณ์ที่ช่วยให้ ผู้ใช้และ โปรแกรมสามารถ ติดต่อสื่อสารกับอุปกรณ์ต่อพ่วงได้ เช่น vmware   
+  ```
+  $ ls -ld /dev/vmmon 
+  crw------- 1 root root 10, 165 Jan  4 10:13 /dev/vmmon
+  ```
+  
+
 4. Block Device
+  เป็นอุปกรณ์ คล้ายกับ character device โดยส่วนใหญ่จะควบคุมฮาร์ดแวร์เช่น ฮาร์ดไดรฟ์หรือ หน่วยความจำ
+  ```
+  $ ls -ld /dev/sda
+  brw-rw---- 1 root disk 8, 0 Jan  4 10:12 /dev/sda
+  ```
+
+
 5. Local domain sockets
+  จะใช้เพื่อสื่อสารระหว่างกระบวนการภายในเครื่อง โดยทั่วไปมักถูกใช้โดยบริการและโปรแกรม เช่น X windows, syslog
+  ```
+  $ ls -ld /dev/log
+  srw-rw-rw- 1 root root 0 Jan  4 10:13 /dev/log
+  ```
+  &nbsp;สามารถใช้คำสั่ง unlink หรือ rm ในการลบ sockets  
+
 6. Named Pipes
+  Named Pipes หรือ FIFOs คล้ายๆ กับ Local domain sockets แต่ Named Pipes จะเป็นช่องทางที่ใช้ในการสื่อสารกันระหว่าง สองโปรแกรมในเครื่อง สามารถสร้างได้โดยคําสั่ง mknod และใช้คําสั่ง rm ในการลบออก
+
 7. Symbolic links
+  ผู้ดูแลระบบ (administrator) สามารถกําหนดสัญลักษณ์ให้ไฟล์หรือไดเร็กทอรีเพื่อใช้เป็นตัวชี้ไปยังไฟล์ต้นฉบับ ซึ่ง Links จะมีอยู่สองประเภท:
+  - hard links
+  - soft links
+    ความแต่ต่างระหว่าง hard links และ soft links คือ ถ้าเป็น soft links จะใช้ชื่อไฟล์เป็นแหล่งอ้างอิงในการเข้าถึงไฟล์ แต่ถ้าเป็น hard links จะอ้างอิงไปที่ไฟล์ต้นฉบับโดยตรง และ hard link ยัง      ไม่สามารถข้ามระบบไฟล์และพาร์ติชันได้ และในการสร้าง soft links สามารถใช้คำสั่ง ln -s ได้
+  ```
+  $ echo file1 > file1
+  $ ln -s file1 file2
+  $ cat file2 
+  file1
+  $ ls -ld file2 
+  lrwxrwxrwx 1 lubos lubos 5 Jan 10 14:42 file2 -> file1
+  ```
+
+
 ## Linux Directories 
 ## Linux File Contents 
 ## Filesystem Hierarchy Standard (FHS)
