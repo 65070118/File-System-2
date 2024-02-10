@@ -2,7 +2,7 @@
 ระบบปฏิบัติการของ Linux นั้นมีการจัดการกับโครงสร้างของไฟล์และไดเร็กทอรีโดยใช้มาตรฐาน FHS ซึ่งเป็นโครงสร้างแบบลำดับชั้น โดยแต่ละไฟล์นั้นสามารถกำหนดสิทธิ์ที่ต่างกันเพื่อควบคุมการเข้าถึง การอ่าน และการเขียน
 
 ## ประเภทของไฟล์ใน Linux
-1. Regular files
+#### 1. Regular files
   เป็นไฟล์ทั่วไปที่พบบ่อยที่สุด เช่น ไฟล์รูปภาพ, โปรแกรมไฟล์
   ```
   $ touch linuxcareer.com
@@ -15,7 +15,7 @@
   $
   ```
   
-2. Directories
+#### 2. Directories
   เป็นไฟล์ที่พบได้บ่อยใน Linux ใช้เก็บ Subdirectories สามารถใช้คำสั่ง  mkdir ในการสร้างไดเร็กทอรี
   ```
   $ mkdir FileTypes
@@ -35,7 +35,7 @@
   $ rm -r FileTypes/
   ```
 
-3. Character device
+#### 3. Character device
   ทั้ง character device และ block device เป็นอุปกรณ์ที่ช่วยให้ ผู้ใช้และ โปรแกรมสามารถ ติดต่อสื่อสารกับอุปกรณ์ต่อพ่วงได้ เช่น vmware   
   ```
   $ ls -ld /dev/vmmon 
@@ -43,7 +43,7 @@
   ```
   
 
-4. Block Device
+#### 4. Block Device
   เป็นอุปกรณ์ คล้ายกับ character device โดยส่วนใหญ่จะควบคุมฮาร์ดแวร์เช่น ฮาร์ดไดรฟ์หรือ หน่วยความจำ
   ```
   $ ls -ld /dev/sda
@@ -51,7 +51,7 @@
   ```
 
 
-5. Local domain sockets
+#### 5. Local domain sockets
   จะใช้เพื่อสื่อสารระหว่างกระบวนการภายในเครื่อง โดยทั่วไปมักถูกใช้โดยบริการและโปรแกรม เช่น X windows, syslog
   ```
   $ ls -ld /dev/log
@@ -59,10 +59,10 @@
   ```
   &nbsp;สามารถใช้คำสั่ง unlink หรือ rm ในการลบ sockets  
 
-6. Named Pipes
+#### 6. Named Pipes
   Named Pipes หรือ FIFOs คล้ายๆ กับ Local domain sockets แต่ Named Pipes จะเป็นช่องทางที่ใช้ในการสื่อสารกันระหว่าง สองโปรแกรมในเครื่อง สามารถสร้างได้โดยคําสั่ง mknod และใช้คําสั่ง rm ในการลบออก
 
-7. Symbolic links
+#### 7. Symbolic links
   ผู้ดูแลระบบ (administrator) สามารถกําหนดสัญลักษณ์ให้ไฟล์หรือไดเร็กทอรีเพื่อใช้เป็นตัวชี้ไปยังไฟล์ต้นฉบับ ซึ่ง Links จะมีอยู่สองประเภท:
   - hard links
   - soft links
