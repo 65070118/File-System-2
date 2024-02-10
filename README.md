@@ -24,7 +24,7 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 | --- | -------- | --------------------- | ------------------------------ |
 |   <img height="150" src="img/Nam.png" width="150"/>  | 65070117 | นัชชา เนินกร่าง       | File System Type               |
 |   <img height="150" src="img/Tum (1).png" width="150"/>  | 65070118 | นันทพงศ์ วิเศษมงคลชัย | Raw Media Devices              |
-|   <img height="150" src="img/best.png"  | 65070129 | ปรเมศวร์ โพธิ์หมุด    | Volume Group Administration    |
+|   <img height="150" src="img/best.png"/>  | 65070129 | ปรเมศวร์ โพธิ์หมุด    | Volume Group Administration    |
 |   <img height="150" src="img/Moss.png" width="150"/>  | 65070135 | ปัณณวิชญ์ ปานช้าง     | Logical Volume Administration |
 |   <img height="150" src="img/Folk.png" width="150"/>  | 65070136 | ปานชีวา สุ่มมาตย์     | Archiver, Backup/Restore Tools |
 |   <img height="150" src="img/del3.png" width="150"/>  | 65070160 | พีรเดช เสือแก้วน้อย   | Files and Directories, FHS     |
