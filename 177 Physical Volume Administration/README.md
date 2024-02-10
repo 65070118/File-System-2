@@ -138,19 +138,19 @@ Red Hat แนะนำว่าให้สร้าง Partition เดีย�
 
 1. ลบ Physical Volume ด้วยคำสั่ง `pvremove`:
 
-        ```
-        # pvremove /dev/vdb3
-        Labels on physical volume "/dev/vdb3" successfully wiped.
-        ```
+   ```
+   # pvremove /dev/vdb3
+   Labels on physical volume "/dev/vdb3" successfully wiped.
+   ```
 
 2. ตรวจสอบว่าลบออกไปแล้วหรือยัง และดู Physical Volume ที่มีอยู่ด้วยคำสั่ง `pvs` :
 
-        ```
-        # pvs
-          PV         VG   Fmt    Attr    PSize      PFree
-          /dev/vdb1  	    lvm2           1020.00m   0
-          /dev/vdb2  	    lvm2           1020.00m   0
-        ```
+   ```
+   # pvs
+   PV         VG   Fmt    Attr    PSize      PFree
+   /dev/vdb1  	    lvm2           1020.00m   0
+   /dev/vdb2  	    lvm2           1020.00m   0
+   ```
 
 
 ## References
