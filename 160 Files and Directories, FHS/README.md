@@ -14,6 +14,8 @@
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Physical File System 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ส่วนที่ทำหน้าที่ในการจัดการเกี่ยวกับบล็อกของหน่วความจำบน disk โดยการจัดเก็บและเรียกดูข้อมูลนั้น จะเป็นการโต้ตอบกับอุปกรณ์ฮาร์ดแวร์โดยตรง <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;และยังช่วยในการจัดสรรทรัพยากรที่ใช้ในการจัดเก็บข้อมูลให้มีประสิทธิภาพ 
 
+![](https://media.geeksforgeeks.org/wp-content/uploads/20231128122313/Linux.png)
+
 <br>
 
 ## ประเภทของไฟล์ใน Linux
@@ -134,7 +136,7 @@
 
   ผลลัพธ์
   
-  ![Linux Directory Structure](https://static.javatpoint.com/linux/images/linux-pwd-command.png)
+  ![](https://static.javatpoint.com/linux/images/linux-pwd-command.png)
 
   คำสั่ง pwd ในการใช้งานรูปแบบต่างๆ
 
