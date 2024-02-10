@@ -197,3 +197,89 @@ gzip -k example.txt
 
 ### สรุป
 ในบทความนี้ เราได้แสดงถึงความสำคัญและความทรงพลังของเครื่องมือ gzip ในระบบปฏิบัติการ Linux ซึ่งเป็นเครื่องมือที่มีประสิทธิภาพสูงในการบีบอัดและขยายขนาดไฟล์ เช่น `-k` เพื่อรักษาไฟล์ต้นฉบับ และ `-v` เพื่อให้ข้อมูลเพิ่มเติม รวมถึง `-f` ที่ช่วยในการบีบอัด และ `-r` เพื่อความสะดวกในการบีบอัดแบบเรียกซ้ำ ทำให้ gzip เป็นเครื่องมือที่ใช้งานได้ง่ายและมีประสิทธิภาพในระบบ Linux
+
+
+
+## Backup/Restore Tools
+เป็นเครื่องมือที่ใช้สำหรับการสำรองข้อมูลโดยมีการสร้างสำเนาข้อมูล (Backup) เพื่อป้องกันข้อมูลจากการสูญหายหรือเสียหาย และยังสามารถกู้คืนข้อมูล (Restore) ในกรณีที่ข้อมูลสูญหายหรือถูกทำลาย โดยมีฟังก์ชันหลักๆ เช่น สำรองข้อมูลทั้งหมดหรือเลือกบางส่วนของข้อมูลที่ต้องการสำรอง เก็บข้อมูลในรูปแบบไฟล์ที่สามารถเข้าถึงได้ง่าย รวมถึงการกู้คืนข้อมูลอย่างรวดเร็วและปลอดภัยในกรณีที่ข้อมูลสูญหายหรือเสียหายในระบบคอมพิวเตอร์หรืออุปกรณ์เก็บข้อมูลต่างๆ
+
+- ## cpio
+เป็นเครื่องมือที่ใช้สำหรับจัดเก็บข้อมูลแบบ archive เหมือนกับ tar โดยมันจะคัดลอกไฟล์เข้าสู่ archive เพื่อสำรองข้อมูล และแยกไฟล์ออกจาก archive เพื่อกู้คืนข้อมูล
+
+**สร้าง scenario files**
+```
+$ which cpio
+```
+พิมพ์คำสั่งต่อไปนี้ในระบบปฏิบัติการ Red Hat หรือระบบปฏิบัติการที่คล้ายกัน เพื่อทำงานตามคำสั่งที่กำหนดไว้
+```
+$ sudo dnf install cpio
+```
+พิมพ์คำสั่งต่อไปนี้ในระบบปฏิบัติการ Debian หรือระบบปฏิบัติการที่คล้ายกัน เพื่อทำงานตามคำสั่งที่กำหนดไว้
+```
+$ sudo apt install cpio
+```
+ถัดมา ให้รันคำสั่งต่อไปนี้เพื่อใช้ในการสำรองข้อมูล/กู้คืนข้อมูล
+```
+$ cd ~
+$ mkdir projects
+$ cd projects/
+$ touch file1.txt file2.txt file3.txt
+$ echo "File 1 Contents" > file1.txt
+```
+![type](https://cdn.ttgtmedia.com/rms/onlineimages/Cpio_figure_1.f.jpg)
+
+**Back up your files**
+
+ตรวจสอบให้แน่ใจว่าคุณอยู่ในไดเร็กทอรี /projects แล้วพิมพ์คำสั่งต่อไปนี้เพื่อสร้าง archive ที่ชื่อว่า backup.cpio
+```
+$ find /home/student/projects | cpio -o > /home/student/backup.cpio
+```
+**เพิ่มไฟล์เข้า archive**
+
+การเพิ่มไฟล์เข้าไปใน archive ที่มีอยู่ โดยใช้ -A ร่วมกับ -o เพื่อเพิ่มไฟล์
+
+ในตัวอย่างนี้ เนื้อหาของไดเร็กทอรี /old_projects ถูกเพิ่มไปยัง archive ที่มีอยู่เช่น backup.cpio
+```
+$ find /home/student/old_projects | cpio -oA > /home/student/backup.cpio
+```
+**จำลองข้อมูลที่สูญหายเพื่อทดสอบการกู้คืน**
+
+สำรองข้อมูลไฟล์ข้อความของคุณโดยใช้ cpio หลังจากนั้นกรุณาเรียกใช้คำสั่งต่อไปนี้ในไดเร็กทอรี /projects
+```
+$ rm -f *.txt
+```
+![type](https://cdn.ttgtmedia.com/rms/onlineimages/Cpio_figure_4.f.jpg)
+
+ใช้ ls เพื่อดูว่าไฟล์หายไปแล้ว
+
+กระบวนการกู้คืนข้อมูลด้วย cpio จะคัดลอกไฟล์จาก archive ไปยังตำแหน่งปลายทาง คล้ายกับ tar เมื่อดึงข้อมูลออกมาเป็นการคัดลอกและไม่ทำลาย archive
+
+ก่อนอื่นแสดงเนื้อหาของ archive backup.cpio โดยใช้ -t ดังที่เห็นด้านล่าง
+```
+$ cpio -tv < backup.cpio
+```
+ระบุเส้นทางไปยังไฟล์ .cpio หากไม่ได้อยู่ในไดเร็กทอรีปัจจุบันของคุณ อาจต้องการดูเนื้อหาของ archive cpio เพื่อยืนยันไฟล์ที่ต้องการกู้คืน
+
+![type](https://cdn.ttgtmedia.com/rms/onlineimages/Cpio_figure_5.f.jpg)
+
+ถัดไปพิมพ์คำสั่งด้านล่างเพื่อกู้คืนไฟล์
+```
+$ cpio -iv < /home/student/
+```
+สามารถเช็คโดยใช้คำสั่ง ls มันควรเห็นไฟล์ข้อความที่ถูกกู้คืน หากไฟล์ไม่ปรากฏหรือไม่ได้อยู่ในตำแหน่งที่ถูกต้อง ต้องตรวจสอบเส้นทางที่ใช้โดย -d พิมพ์ cat file1.txt เพื่อดูเนื้อหาของไฟล์
+
+ถ้าไม่ได้ระบุตำแหน่งปลายทาง เนื้อหาของ archive จะถูกแยกออกไปที่ไดเร็กทอรีปัจจุบัน ใช้ -d เพื่อกำหนดตำแหน่งการกู้คืน และ cpio จะไม่เขียนทับไฟล์ที่มีชื่อเดียวกันอยู่แล้ว ตัวอย่างดังต่อไปนี้
+```
+$ cpio -ivd /home/student/restoreditems < /home/student/
+```
+
+**Command**
+| Option | Description                                                 |
+|--------|-------------------------------------------------------------|
+| -o     | Creates the file archive and copies files into it. This is the backup command. |
+| -v     | Verbose mode, displaying the names of files copied out.    |
+| -p     | Preserves permissions and ownership.                        |
+| -A     | Appends files to an existing archive.                       |
+| -i     | Copies the files from the archive. This is the restore command. |
+| -v     | Verbose mode. Displays the names of files copied in.       |
+| -d     | Creates directories as needed. Used to specify a restore location. |
