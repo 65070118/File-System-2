@@ -91,5 +91,11 @@
 
   
 ## Linux Directories 
+  Command คืออะไร command ก็คือคำสั่งที่เราเขียนเพื่อให้ คอมพิวเตอร์ทำงานตามความต้องการของเรา ถ้าเป็นใน windows สามารถเขียนคำสั่งได้ใน Command Prompt แต่ถ้าเป็นใน Linux จะใช้ Terminal โดย   คำสั่งจะถูกส่งไปยัง shell ซึ่งจะทำการอ่านและดำเนินการ โดย shell จะทำหน้าที่เป็นตัวกลางระหว่างผู้ใช้กับคอมพิวเตอร์
+
+
+
+
+
 ## Linux File Contents 
 ## Filesystem Hierarchy Standard (FHS)
