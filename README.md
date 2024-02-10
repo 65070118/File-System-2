@@ -27,5 +27,5 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 |     | 65070129 | ปรเมศวร์ โพธิ์หมุด    | Volume Group Administration    |
 |   <img height="150" src="img/Moss.png" width="150"/>  | 65070135 | ปัณณวิชญ์ ปานช้าง     | Logical Volume Administration |
 |   <img height="150" src="img/Folk.png" width="150"/>  | 65070136 | ปานชีวา สุ่มมาตย์     | Archiver, Backup/Restore Tools |
-|   <img height="150" src="img/del.png" width="150"/>  | 65070160 | พีรเดช เสือแก้วน้อย   | Files and Directories, FHS     |
+|   <img height="150" src="img/del2.png" width="150"/>  | 65070160 | พีรเดช เสือแก้วน้อย   | Files and Directories, FHS     |
 |   <img height="150" src="img/Phum.png" width="150"/>  | 65070177 | ภูมิ บุตรศรีชา        | Physical Volume Administration  |
