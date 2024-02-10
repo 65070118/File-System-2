@@ -11,7 +11,6 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 - [Archiver, Backup/Restore Tools](https://github.com/65070118/File-System-3/tree/main/136%20Archiver%2C%20Backup_Restore%20Tools)
 - [สมาชิก](https://github.com/65070118/File-System-3?tab=readme-ov-file#%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%8A%E0%B8%B4%E0%B8%81)
 
-# Introduction
 
 # Overview
 
