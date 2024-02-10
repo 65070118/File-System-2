@@ -76,8 +76,20 @@
   $ ls -ld file2 
   lrwxrwxrwx 1 lubos lubos 5 Jan 10 14:42 file2 -> file1
   ```
+  โดยสามารถใช้คําสั่ง unlink หรือ rm ในการลบ Link
 
+### สรุปประเภทของไฟล์ใน Linux
+| ตัวอักษร  | ความหมาย                 | 
+|----------|---------------------------|
+| `-`      | Regular files             |
+| `d`      | Directories               |
+| `l`      | Symbolic links            |
+| `b`      | Block Device              |
+| `p`      | Named Pipes               |
+| `c`      | Character device          |
+| `s`      | Local domain sockets      |
 
+  
 ## Linux Directories 
 ## Linux File Contents 
 ## Filesystem Hierarchy Standard (FHS)
