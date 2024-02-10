@@ -226,13 +226,12 @@
 
 
 # Reference
-- https://www.easeus.com/computer-instruction/linux-file-system-type.html
-- https://www.geeksforgeeks.org/linux-file-system/
-- https://www.javatpoint.com/linux-file-system
-- https://kridsana.cmtc.ac.th/load/Linux/unix02-Install.pdf
-- https://www.acisonline.net/?p=8786
-- https://www.tecmint.com/find-linux-filesystem-type/
-- https://saixiii.com/fsck-linux-command/
-- https://th.linux-console.net/?p=182
-- https://blog.desdelinux.net/th/sistemas-archivos-cual-elegir-discos-particiones-linux/
-
+- [easeus.com] (https://www.easeus.com/computer-instruction/linux-file-system-type.html)
+- [geeksforgeeks] (https://www.geeksforgeeks.org/linux-file-system/)
+- [javatpoint] (https://www.javatpoint.com/linux-file-system)
+- [kridsana.cmtc] (https://kridsana.cmtc.ac.th/load/Linux/unix02-Install.pdf)
+- [acisonline.net] (https://www.acisonline.net/?p=8786)
+- [tecmint.com] (https://www.tecmint.com/find-linux-filesystem-type/)
+- [saixiii.com] (https://saixiii.com/fsck-linux-command/)
+- [th.linux-console.net] (https://th.linux-console.net/?p=182)
+- [blog.desdelinux.net] (https://blog.desdelinux.net/th/sistemas-archivos-cual-elegir-discos-particiones-linux/)
