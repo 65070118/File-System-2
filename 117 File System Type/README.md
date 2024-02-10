@@ -3,6 +3,7 @@
 อย่างที่ทราบกัน **file system** มีหน้าที่จัดการข้อมูลบนอุปกรณ์ที่จัดเก็บข้อมูล เช่น  hard drives, SSDs และ USB drives  ต่อมาสิ่งที่สำคัญเลยก็คือ เราต้องทำความเข้าใจเกี่ยวกับระบบไฟล์ ว่าระบบไฟล์นั้นใช้ประเภทใดบ้างและมีลักษณะอย่างไร ซึ่งในส่วนนี้เราจะเรียนรู้เกี่ยวกับประเภทรูปแบบระบบไฟล์หลักๆ ที่สำคัญทั้งหมดบน Linux
 
 ![Type](https://static.javatpoint.com/linux/images/linux-file-system2.png)
+
 อ้างอิงรูปภาพจาก https://www.javatpoint.com/linux-file-system
 
 
@@ -63,6 +64,7 @@
 
 # หลักการทำงาน File System
 ![Type](https://lh3.googleusercontent.com/UhXSGNFoV6RHiFAtUb7vIVoO0GovE4cqAp2H7aMBNVklxQrxSXG8toYWMJa1D-P7BOknqBIIORJbhR5wQGuuwNq917haZlT10g8qW56NC4l7FpXAuEaGvdhpWsSpJptukT12H0hFzLJnjGAC73_TjQWG1AWrx9dWF7sL_ebT7nWCydzNOL4p6aJuyA)
+
 อ้างอิงรูปภาพจาก https://www.enablegeek.com/tutorial/work-file-system-in-linux/
 
 ส่วนต่อมาเราจะพูดถึงหลักการทำงานของระบบไฟล์ Linux จากรูปข้างบน สิ่งที่ทำให้แอปพลิเคชันสามารถทำงานกับระบบไฟล์ได้ จะมี 2 ส่วนคือ **kernel** ทำให้ผู้ใช้สามารถติดต่อกับระบบไฟล์ได้ 
