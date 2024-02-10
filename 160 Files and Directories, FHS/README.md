@@ -133,7 +133,7 @@
   ```
   ผลลัพธ์
   
-  !(https://static.javatpoint.com/linux/images/linux-cd-command1.png)
+  ![](https://static.javatpoint.com/linux/images/linux-cd-command1.png)
 
   คำสั่ง cd ในการใช้งานรูปแบบต่างๆ
 
