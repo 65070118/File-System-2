@@ -236,10 +236,17 @@ rmdir created
 
 ![](https://static.javatpoint.com/linux/images/linux-directories-rmdir-command1.png)
 
+<br>
 
 > [!NOTE]
-> - rmdir -p เป็นคำสั่งที่ใช้ลบได้เร็กทอรี แต่มีการเพิ่ม -p เป็นการบอกให้ลบไดเร็กทอรีย่อยด้วย
+> - rmdir -p ในการเพิ่ม option (-p) เป็นการบอกให้ลบไดเร็กทอรีย่อยด้วย
+
+<br>
 
 
 ## Linux File Contents 
+สามารถใช้คำสั่งต่อไปนี้ในการดูเนื้อหาที่อยู่ในไฟล์ ในรูปแบบต่างๆ 
+
+
+
 ## Filesystem Hierarchy Standard (FHS)
