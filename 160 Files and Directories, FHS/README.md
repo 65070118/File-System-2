@@ -109,6 +109,7 @@
   $ /bin/pwd  
   ```
   ผลลัพธ์
+  
   ![Linux Directory Structure](https://static.javatpoint.com/linux/images/linux-pwd-command.png)
 
 
