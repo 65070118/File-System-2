@@ -20,7 +20,7 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 
 # สมาชิก
 
-| รูป | รหัส     | ชื่อ                  | ส่วนที่รับผิดชอบ               |
+| รูป | รหัสนักศึกษา     | ชื่อ                  | ส่วนที่รับผิดชอบ               |
 | --- | -------- | --------------------- | ------------------------------ |
 |   <img height="150" src="img/Nam.png" width="150"/>  | 65070117 | นัชชา เนินกร่าง       | File System Type               |
 |   <img height="150" src="img/Tum (1).png" width="150"/>  | 65070118 | นันทพงศ์ วิเศษมงคลชัย | Raw Media Devices              |
