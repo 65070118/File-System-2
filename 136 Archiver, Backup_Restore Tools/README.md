@@ -46,4 +46,31 @@ tar xvf file.tar
 - '-v': แสดงผลลัพธ์แบบ verbose ตอนกระบวนการแยกไฟล์
 - '-f': ระบุชื่อไฟล์ของเอกสาร
 
+**การบีบอัด gzip บน tar archive โดยใช้ -z**
+
+คำสั่งนี้สร้างไฟล์ tar ชื่อ file.tar.gz ซึ่งเป็นไฟล์เก็บถาวรของไฟล์ .c
+```
+tar cvzf file.tar.gz *.c
+```
+**แยก gzip tar Archive (*.tar.gz) โดยใช้ -xvzf**
+
+คำสั่งนี้จะแตกไฟล์จากไฟล์ tar ที่เก็บใน file.tar.gz
+```
+tar xvzf file.tar.gz
+```
+**Command**
+| Option   | Description                                       |
+|----------|---------------------------------------------------|
+| -A       | Append tar files to existing archives.           |
+| -c       | Create a new archive file.                        |
+| -d       | Compare archive with specified filesystem.       |
+| -j       | Bzip the archive.                                 |
+| -r       | Append files to existing archives.                |
+| -t       | List contents of existing archives.               |
+| -u       | Update archive.                                   |
+| -f       | Specifies the filename of the archive to be created or extracted.               |
+| -v       | Displays verbose information, providing detailed output during the archiving or extraction process.                                 |
+| -x       | Extract file from existing archive.               |
+| -z       | Gzip the archive.                                 |
+| --delete | Delete files from existing archive.               |
 
