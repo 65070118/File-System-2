@@ -209,6 +209,7 @@
 
 # Reference
 - https://www.easeus.com/computer-instruction/linux-file-system-type.html
+- https://www.geeksforgeeks.org/linux-file-system/
 - https://www.javatpoint.com/linux-file-system
 - https://kridsana.cmtc.ac.th/load/Linux/unix02-Install.pdf
 - https://www.acisonline.net/?p=8786
