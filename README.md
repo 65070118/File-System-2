@@ -1,4 +1,4 @@
-# File-System-3
+# FileSystem-3
 
 Computer Organization and Operating System Assignment (Chapter: File System, Sec3)
 
@@ -17,6 +17,9 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 # Introduction
 
 # Overview
+
+# Subcomponents
+
 
 # สมาชิก
 
