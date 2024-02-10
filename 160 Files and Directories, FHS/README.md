@@ -97,7 +97,21 @@
   - Built-in shell commands: เป็นคำสั่งที่เป็นส่วนหนึ่งของ shell 
   - External/Linux commands: เป็นคำสั่งจากภายนอกที่แยกออกมาต่างหากอาจจะเขียนด้วยภาษา C หรือโปรแกรมอื่นๆ
 
+### Linux Directory Commands 
+  1. pwd  มาจากคำว่า  (print working directory) เป็นคำสั่งที่ใช้แสดงไดเร็กทอรีที่ทำงานอยู่ใน ปัจจุบัน ซึ่งเมื่อเราเข้าสู่ระบบของ Linux เริ่มต้นจะอยู่ที่ home ไดเร็กทอรี
+
+  รูปแบบการเขียนคำสั่ง
+  ```
+  pwd [-options] 
+  ```
+  ตัวอย่างการใช้งาน
+  ```
+  $ /bin/pwd  
+  ```
+  ผลลัพธ์
+  ![Linux Directory Structure](https://static.javatpoint.com/linux/images/linux-pwd-command.png)
 
 
+  
 ## Linux File Contents 
 ## Filesystem Hierarchy Standard (FHS)
