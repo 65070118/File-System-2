@@ -88,6 +88,7 @@
 | `s`      | Local domain sockets      |
 
   <br>
+
   ---
   
 ## Linux Directories 
