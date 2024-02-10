@@ -93,6 +93,8 @@ tar xvzf file.tar.gz
 
 - ## cpio
 `cpio` ย่อมาจาก `Copy in and out` (คัดลอกเข้าและออก) คือเครื่องมือสำหรับเก็บ archive file แบบทั่วไปสำหรับระบบปฏิบัติการ Linux มันถูกใช้งานโดย RedHat Package Manager (RPM) และใน initramfs ของ Linux Kernel เป็นต้น
+
+- ## gzip
 ```
 gzip [Options] [filenames]
 ```
@@ -119,19 +121,16 @@ gzip -k example.txt
 คำสั่งนี้จะบีบอัด `example.txt` และเก็บไฟล์ต้นฉบับไว้ครบถ้วน
 
 **Command**
-| Option | Description                                                        |
-|--------|--------------------------------------------------------------------|
-| -0     | Read a list of filenames terminated by a null character            |
-|        | instead of a newline.                                              |
-| -a     | Reset Access time.                                                 |
-| -A     | Append.                                                            |
-| -b     | Swap.                                                              |
-| -d     | Make Directories.                                                  |
-| -f     | Forcefully compress a file even if a compressed version with the same name already exists.       |
-| -k     | Compress a file and keep the original file, resulting in both the compressed and original files. |
-| -L     | Display the gzip license for the software.                                                        |
-| -r     | Recursively compress all files in a folder and its subfolders.                                    |
-| -v     | Display the name and percentage reduction for each file compressed or decompressed.               |
+| Option | Description                                                                                               |
+|--------|-----------------------------------------------------------------------------------------------------------|
+| -f     | Forcefully compress a file even if a compressed version with the same name already exists.                |
+| -k     | Compress a file and keep the original file, resulting in both the compressed and original files.         |
+| -L     | Display the gzip license for the software.                                                                |
+| -r     | Recursively compress all files in a folder and its subfolders.                                            |
+| -v     | Display the name and percentage reduction for each file compressed or decompressed.                       |
+| -d     | Decompress a file that was compressed using the gzip command.                                              |
+
+
 
 ### สรุป
 ในบทความนี้ เราได้แสดงถึงความสำคัญและความทรงพลังของเครื่องมือ gzip ในระบบปฏิบัติการ Linux ซึ่งเป็นเครื่องมือที่มีประสิทธิภาพสูงในการบีบอัดและขยายขนาดไฟล์ เช่น `-k` เพื่อรักษาไฟล์ต้นฉบับ และ `-v` เพื่อให้ข้อมูลเพิ่มเติม รวมถึง `-f` ที่ช่วยในการบีบอัด และ `-r` เพื่อความสะดวกในการบีบอัดแบบเรียกซ้ำ ทำให้ gzip เป็นเครื่องมือที่ใช้งานได้ง่ายและมีประสิทธิภาพในระบบ Linux
