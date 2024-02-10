@@ -22,7 +22,7 @@
 
 ![ตัวอย่าง](https://access.redhat.com/webassets/avalon/d/Red_Hat_Enterprise_Linux-9-Configuring_and_managing_logical_volumes-en-US/images/8a27e9aae1f828bbdd43c54090d5ab15/physical-volume-layout.png)
 
-- LVM Label : ช่วยในการระบุอุปกรณ์ว่าเป็น Physical Volume ของ LVM โดยจะประกอบไปด้วย UUID ที่ไม่ซ้ำกัน, ขนาดของ block device ใน bytes และ บันทึกตำแหน่งของ metadata ของ LVM บนอุปกรณ์
+- LVM Label : ช่วยในการระบุอุปกรณ์ว่าเป็น Physical Volume ของ LVM โดยจะประกอบไปด้วย UUID ที่ไม่ซ้ำกัน, ขนาดของ block device เป็น bytes และ บันทึกตำแหน่งของ metadata ของ LVM บนอุปกรณ์
 
 - Metadata : เก็บข้อมูลการกำหนดค่าของ Volume group ที่มีอยู่ในระบบ โดยจะมีการสร้างสำเนาข้อมูล metadata เอาไว้ทุกๆ Metadata Area บน ทุกๆ Physical Volume ภายใน Volume group
 
@@ -116,9 +116,11 @@
           /dev/vdb2  	    lvm2           1020.00m   0
         ```
 
-## References
-- https://access.redhat.com/documentation/th-th/red_hat_enterprise_linux/8/html/configuring_and_managing_logical_volumes/managing-lvm-physical-volumes_configuring-and-managing-logical-volumes
 
-- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_logical_volumes/managing-lvm-physical-volumes_configuring-and-managing-logical-volumes
+## References
 
 - https://www.ibm.com/docs/es/aix/7.1?topic=subsystem-physical-volumes
+
+-https://www.redhat.com/sysadmin/create-physical-volume
+
+-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index
