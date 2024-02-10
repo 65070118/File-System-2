@@ -127,7 +127,7 @@
   fsck: error 2 while executing fsck.ntfs for /dev/sda
 ```
 
-มันจะส่งคืน exit code ออกมา สามารถดู exit code ได้ **โดยใช้ `man fsck`**
+มันจะส่งคืน exit code ออกมา สามารถดูคำอธิบาย exit code ได้ **โดยใช้ `man fsck`**
 
 ```
 0 – No errors
