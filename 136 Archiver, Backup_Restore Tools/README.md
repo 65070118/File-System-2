@@ -94,8 +94,68 @@ tar xvzf file.tar.gz
 ### สรุป
 บทความนี้เน้นเรื่องการลดขนาดของไฟล์ในระบบปฏิบัติการ Linux โดยการใช้คำสั่ง Tape Archive (Tar) ซึ่งเป็นเครื่องมือที่สามารถรวมไฟล์และบีบอัดไฟล์เหล่านั้นให้มีขนาดเล็กลง และหวังว่าคู่มือนี้จะช่วยให้ผู้ใช้ Linux ทำงานอย่างมีประสิทธิภาพและง่ายต่อการจัดการมากขึ้น
 
-- ## cpio
-`cpio` ย่อมาจาก `Copy in and out` (คัดลอกเข้าและออก) คือเครื่องมือสำหรับเก็บ archive file แบบทั่วไปสำหรับระบบปฏิบัติการ Linux มันถูกใช้งานโดย RedHat Package Manager (RPM) และใน initramfs ของ Linux Kernel เป็นต้น
+- ## zip
+**โครงสร้างสำหรับการสร้างไฟล์ zip**
+```
+zip [file_name.zip] [file_name]
+```
+**คำสั่ง unzip ใน Zip**
+
+`unzip` เป็นคำสั่งที่ใช้ในระบบ Unix เพื่อแสดงรายการทดสอบหรือแตกไฟล์จากไฟล์ `zip` โดยทั่วไปแล้วพฤติกรรมเริ่มต้นของ `unzip` คือการแตกไฟล์ทั้งหมดจากไฟล์ `zip` ที่ระบุลงในไดเร็กทอรีปัจจุบัน นั่นหมายความว่าถ้าไฟล์ zip มีโครงสร้างโฟลเดอร์ซ้อนกัน unzip จะสร้างโฟลเดอร์ที่มีชื่อเหมือนกับชื่อของไฟล์ zip และแยกไฟล์ไปยังโฟลเดอร์นั้นๆ โดยจะไม่ลบหรือแทนที่ไฟล์ที่มีชื่อเหมือนกันที่มีอยู่แล้วในไดเร็กทอรีปัจจุบัน
+
+ตัวอย่างเช่น เรามีไฟล์ zip “name = jayesh_gfg.zip” และเรามีไฟล์ข้อความสามไฟล์อยู่ข้างใน “name = a.txt, b.txt และ c.txt” ต้องการ unzip
+```
+unzip jayesh_gfg.zip
+```
+**Output**
+
+![type](https://media.geeksforgeeks.org/wp-content/uploads/20230424165015/56.webp)
+
+**คำสั่ง -u ใน Zip**
+
+ตัวอย่างเช่น เรามีไฟล์ zip “name= myfile.zip” และเราต้องเพิ่มไฟล์ใหม่ “name = hello9.c” เข้าไป
+```
+zip -u myfile.zip hello9.c
+```
+**Output**
+
+![type](https://media.geeksforgeeks.org/wp-content/uploads/20230424172444/58.webp)
+
+**คำสั่ง -m ใน Zip**
+
+ตัวอย่างเช่น เรามีไฟล์ zip “name= myfile.zip” และเราต้องย้ายไฟล์ “name = hello1.c, hello2.c, hello3.c, hello4.c, hello5.c, hello6.c, hello8.c, hello9 .c ” ในไดเร็กทอรีปัจจุบันเป็นไฟล์ zip
+```
+zip -m myfile.zip *.c
+```
+**Output**
+
+![type](https://media.geeksforgeeks.org/wp-content/uploads/20230424173509/59.webp)
+
+**คำสั่ง -r ใน Zip**
+
+ตัวอย่างเช่น เรามีไฟล์ zip “name= myfile.zip” และเราต้องย้ายไฟล์ “name = hello1.c, hello2.c, hello3.c, hello4.c, hello5.c, hello6.c, hello7.c, hello8 .c ” มีอยู่ในไดเร็กทอรี “name= jkj_gfg” ไปยังไฟล์ zip เดิม
+```
+zip -r myfile.zip jkj_gfg/
+```
+ใช้คำสั่ง `vi myfile.zip` เพื่อตรวจสอบ
+
+**Output**
+
+![type](https://media.geeksforgeeks.org/wp-content/uploads/20230424174443/60.webp)
+
+**Command**
+| Option | Description                                           |
+|--------|-------------------------------------------------------|
+| -d     | Remove files from the archive.                        |
+| -u     | Update files in the archive.                          |
+| -m     | Move files into the archive.                          |
+| -r     | Recursively zip a directory.                          |
+| -x     | Exclude files from the zip.                           |
+| -v     | Verbose mode.                                         |
+
+
+### สรุป
+คำสั่ง Zip ใน Linux ใช้เพื่อบีบอัดไฟล์และบรรจุลงในไฟล์เก็บถาวร .zip ไฟล์เดียว ซึ่งช่วยในการประหยัดพื้นที่ดิสก์และทำให้ง่ายต่อการจัดการข้อมูลขนาดใหญ่ เราได้พูดถึงตัวเลือกต่างๆ ที่ใช้ในคำสั่ง zip เช่น -u, -m, -r  ซึ่งเป็นเครื่องมือที่แนะนำสำหรับผู้ใช้ Linux ในการจัดการไฟล์ให้มีประสิทธิภาพ
 
 - ## gzip
 ```
