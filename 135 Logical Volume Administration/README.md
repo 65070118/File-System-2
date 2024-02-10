@@ -53,7 +53,7 @@ LVM ทำการแบ่ง Volume Groups(VG) ออกแบ่งเชิ
 ```
 lvscan
 ```
-![lvsan](/pic/lvscan.png)
+![lvsan](135 Logical Volume Administration/pic/lvscan.png)
 
 ```
 lvdisplay
