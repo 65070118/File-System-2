@@ -183,6 +183,19 @@ lvremove vgname/lvname
 lvrename vgname/oldnamelv vgname/newnamelv
 ```
 
+### Lv command
+
+| คำสั่ง     | รายละเอียด                                                                                              |
+|----------|-------------------------------------------------------------------------------------------------------|
+| lvchange     | เปลี่ยนคุณสมบัติของ Logical Volume                                           |
+| lvconvert      | แปลง Logical Volume จาก linear เป็น mirror หรือ snapshot                                                                     |
+| lvmconfig      |แสดงข้อมูลการกำหนดค่าหลังจากโหลด lvm.conf(5) และไฟล์การกำหนดค่าอื่นๆ                                                       |
+| lvmdump      | สร้างการถ่ายโอนข้อมูล lvm2 เพื่อวัตถุประสงค์ในการวินิจฉัย                                    |
+| lvresize     | ปรับขนาด Logical Volume และย้อนกลับไม่ได้                                  |
+| lvscan     | สแกน (ดิสก์ทั้งหมด) เพื่อหา Logical Volumes   |
+
+
+
 
 ## Reference
 
@@ -190,3 +203,5 @@ lvrename vgname/oldnamelv vgname/newnamelv
 - [youtubebulemonkey](https://www.youtube.com/watch?v=JlWiNnuMm_4)
 - [linux-training](https://linux-training.be/linuxsto.pdf)
 - [medium](https://medium.com/@songyotemungmai/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99-lvm-%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AE%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%94%E0%B8%B4%E0%B8%AA%E0%B8%81%E0%B9%8C-6c127b24ef87)
+
+-[manpages](https://manpages.ubuntu.com/manpages/xenial/man8/lvm.8.html)
