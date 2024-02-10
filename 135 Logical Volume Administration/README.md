@@ -58,7 +58,7 @@ lvscan
 ```
 lvdisplay
 ```
-![lvdisplay](/pic/lvdisplay.png)
+![lvdisplay](/135%20Logical%20Volume%20Administration/pic/lvdisplay.png)
 
 
 ### การสร้าง Logical Volumes
@@ -67,13 +67,13 @@ lvdisplay
 lvcreate --name $name  --size xxg $nameVG
 
 ```
-![lvcreate](/pic/lvcreate.png)
+![lvcreate](/135%20Logical%20Volume%20Administration/pic/lvcreate.png)
 
 ### การ Setup Logical Volumes
 ```
 mkfs.ntfs -QIL $name /dev/$nameVG/$namelvm
 ```
-![lvmkfs](/pic/mkfs.ntfs.png)
+![lvmkfs](/135%20Logical%20Volume%20Administration/pic/mkfs.ntfs.png)
 
 ในการ setup เราต้องสร้างระบบไฟล์ขึ้นมาในตัวอย่างนี้แบบระบบไฟล์ ntfs
 
@@ -81,14 +81,14 @@ mkfs.ntfs -QIL $name /dev/$nameVG/$namelvm
     mount /dev/VG/LVM /dir
 ```
 
-![lvmount](/pic/mount.png)
+![lvmount](/135%20Logical%20Volume%20Administration/pic/mount.png)
 
 สร้าง directory และใช้การ mount เพื่อให้ lvm เชื่อมกับ directory นั้น
 
 ```
     df -h .
 ```
-![lvmount2](/pic/showresulfmount.png)
+![lvmount2](/135%20Logical%20Volume%20Administration/pic/showresulfmount.png)
 
 แสดงรายละเอียด File System
 
@@ -101,13 +101,13 @@ mkfs.ntfs -QIL $name /dev/$nameVG/$namelvm
 ```
 lvextend -L +10G my-logical-volume
 ```
-![lvextend](/pic/extend.png)
+![lvextend](/135%20Logical%20Volume%20Administration/pic/extend.png)
 
 ### การลดขนาด Logical Volumes
 ```
 lvreduce -L -10G my-volume
 ```
-![lvextend](/pic/lvreduce.png)
+![lvextend](/135%20Logical%20Volume%20Administration/pic/lvreduce.png)
 
 
 ### การ Resize Logical Volumes
@@ -118,7 +118,7 @@ lvreduce -L -10G my-volume
 ```
 nrfsresize /dev/nameVG/nameLV
 ```
-![lvextend](/pic/resize.png)
+![lvextend](/135%20Logical%20Volume%20Administration/pic/resize.png)
 
 ### LVM Mirror
 
@@ -137,11 +137,11 @@ LVM Mirror เป็นเทคนิคการสำรองข้อมู
 
 #### ตัวอย่างการ LVM Mirror
 ในตัวอย่างนี้จะใช้ sdb2 sbc สร้าง VG ขึ้นมาชื่อว่า vgm
-![lvextend](/pic/createvgformirror.png)
+![lvextend](/135%20Logical%20Volume%20Administration/pic/createvgformirror.png)
 ```
 lvcreate –size 500m -n testmir -m 1 vgm
 ```
-![lvextend2](/pic/createmirror.png)
+![lvextend2](/135%20Logical%20Volume%20Administration/pic/createmirror.png)
 
 ใช้คำสั่งเพื่อสร้าง lvcreate –size 500m -n testmir -m 1 vgm
 
@@ -160,7 +160,7 @@ lvcreate –size 500m -n testmir -m 1 vgm
 ```
 lvcreate -L100M -s -n snaptest2 dev/vgm/mos_vg2
 ```
-![lvextend](/pic/lvcreatesnapshot.png)
+![lvextend](/135%20Logical%20Volume%20Administration/pic/lvcreatesnapshot.png)
 
 -  -L100M: กำหนดขนาด Snapshot LV ใหม่เป็น 100MB
 
