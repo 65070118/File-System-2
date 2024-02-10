@@ -22,13 +22,32 @@
 
 ![ตัวอย่าง](https://access.redhat.com/webassets/avalon/d/Red_Hat_Enterprise_Linux-9-Configuring_and_managing_logical_volumes-en-US/images/8a27e9aae1f828bbdd43c54090d5ab15/physical-volume-layout.png)
 
-- LVM Label : ช่วยในการระบุอุปกรณ์ว่าเป็น Physical Volume ของ LVM โดยจะประกอบไปด้วย UUID ที่ไม่ซ้ำกัน, ขนาดของ block device เป็น bytes และ บันทึกตำแหน่งของ metadata ของ LVM บนอุปกรณ์
+### LVM Label : 
 
-- Metadata : เก็บข้อมูลการกำหนดค่าของ Volume group ที่มีอยู่ในระบบ โดยจะมีการสร้างสำเนาข้อมูล metadata เอาไว้ทุกๆ Metadata Area บน ทุกๆ Physical Volume ภายใน Volume group
+ช่วยในการระบุอุปกรณ์ว่าเป็น Physical Volume ของ LVM 
 
-- Usable space : พื้นที่ที่ใช้งานได้
+ตามค่าเริ่มต้น LVM Label จะอยู่ใน secter 512-bytes ที่ 2 หรือ สามารถเลือกวาง label นี้ ใน 4 secter แรกก็ได้ เพราะว่า LVM tools จะทำการแสกนหา LVM Label ใน 4 secter แรก และ Physical Volume Label จะขึ้นต้นด้วยสตริง LABELONE
+  Physical Volume Label จะประกอบไปด้วย :
+
+- Physical Volume UUID
+
+- ขนาดของ block device เป็น bytes
+
+- รายการตำแหน่งของพื้นที่ข้อมูลที่สิ้นสุดด้วยค่า NULL
+
+- รายการตำแหน่งพื้นที่ข้อมูล metadataที่สิ้นสุดด้วยค่า NULL
+
+### Metadata : 
+
+เก็บข้อมูลการกำหนดค่าของ Volume group ที่มีอยู่ในระบบ โดยจะมีการสร้างสำเนาข้อมูล metadata เอาไว้ทุกๆ Metadata Area บน ทุกๆ Physical Volume ภายใน Volume group
+
+### Usable space : 
+
+พื้นที่ที่ใช้งานได้
 
 # การสร้าง Physical Volume
+
+เมื่อต้องการเพิ่มอุปกรณ์เก็บข้อมูล เข้าสู่ระบบ LVM เพื่อให้สามารถจัดการพื้นที่เก็บข้อมูลได้อย่างยืดหยุ่น เราจะต้องสร้าง Physical Value โดยใช้คำสั่งที่เกี่ยวข้องกับ LVM เพื่อให้ระบบ LVM รู้ว่าอุปกรณ์เหล่านั้นเป็นส่วนหนึ่งของ LVM.
 
 ก่อนหน้านั้นเราสามารถกำหนด ใช้ Hard disk ได้ทั้งก้อน คือ `/dev/vdb` หรือ ทำเป็น Partition คือ `/dev/vdb1 /dev/vdb2`
 
