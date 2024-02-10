@@ -304,3 +304,17 @@ dd if=/dev/sda of=/mnt/backup/backup.img bs=4M status=progress
 - `status=progress` แสดงความคืบหน้าของการถ่ายโอนข้อมูล บ่งชี้สถานะปัจจุบัน
 
 คำสั่งนี้จะคัดลอก `/dev/sda` ไปยังไฟล์เอาท์พุตโดยใช้ dd ซึ่งทำให้การสำรองข้อมูลใน Linux เป็นเรื่องง่าย แต่อาจใช้เวลานาน ขึ้นอยู่กับขนาดของดิสก์และความเร็วในการถ่ายโอนข้อมูล
+
+
+
+# References
+- https://linuxsimply.com/archive-in-linux/
+- https://stackoverflow.com/questions/36614239/difference-between-archiving-and-compression
+- https://wiki.archlinux.org/title/Archiving_and_compression
+- https://www.geeksforgeeks.org/tar-command-linux-examples/?ref=lbp
+- https://www.geeksforgeeks.org/zip-command-in-linux-with-examples/?ref=lbp
+- https://www.geeksforgeeks.org/gzip-command-linux/?ref=lbp
+- https://medium.com/@cuncis/linux-archiving-commands-a-beginners-guide-to-efficient-file-management-8448f7403e95#:~:text=The%20most%20commonly%20used%20archiving,manage%2C%20and%20extract%20zip%20archives.
+- https://www.tecmint.com/command-line-archive-tools-for-linux/
+- https://www.techtarget.com/searchdatabackup/tutorial/Tutorial-Use-Linux-cpio-to-back-up-and-restore-files#:~:text=The%20cpio%20utility%20is%20an,%2Din%2C%20copy%2Dout
+- https://www.scaler.com/topics/backup-in-linux/
