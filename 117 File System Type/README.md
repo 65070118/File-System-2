@@ -62,6 +62,8 @@
 - Snapshot ที่ช่วยในการสร้างสำเนาของข้อมูล โดยการบันทึกสถานะปัจจุบันของข้อมูล 
 - built-in RAID ในตัว
 
+นอกจากประเภทที่กล่าวมาข้างบน Linux ยังรองรับการใช้งานระบบไฟล์ของระบบปฏิบัติการอื่น ๆ ได้อีกด้วย เช่น NTFS และ exFAT แต่มีข้อจำกัดที่เกี่ยวกับการรับรองสิทธิ์ Unix มาตรฐาน
+
 # หลักการทำงาน File System
 ![Type](https://lh3.googleusercontent.com/UhXSGNFoV6RHiFAtUb7vIVoO0GovE4cqAp2H7aMBNVklxQrxSXG8toYWMJa1D-P7BOknqBIIORJbhR5wQGuuwNq917haZlT10g8qW56NC4l7FpXAuEaGvdhpWsSpJptukT12H0hFzLJnjGAC73_TjQWG1AWrx9dWF7sL_ebT7nWCydzNOL4p6aJuyA)
 
