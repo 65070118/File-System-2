@@ -89,7 +89,7 @@
 
 **ตัวอย่างเช่น**
 
-```http
+```
   sudo mount /dev/sdX1 /mnt/ext4_partition
 ```
 จากคำสั่งข้างบน เราทำการ mount ระบบไฟล์ Ext4 ไปยังโฟลเดอร์ /mnt/ext4_partition
@@ -104,14 +104,14 @@
 
 **ตัวอย่างเช่น**
 
-```http
+```
   fsck /dev/sdb
 ```
 จากคำสั่งข้างบน ตรวจสอบระบบไฟล์บนอุปกรณ์ /dev/sdb
 
 ถ้า**ไม่พบปัญหา** หรือไม่มีอะไรผิดพลาด จะแสดงผลลัพธ์แบบนี้
 
-```http
+```
   $ fsck from util-linux 2.36.1
   e2fsck 1.46.2 (28-Feb-2021)
   /dev/sdb: clean, x/y files, z/z blocks
@@ -119,7 +119,7 @@
 
 แต่ถ้า**พบปัญหา** หรือมีข้อผิดพลาด จะแสดงผลลัพธ์แบบนี้
 
-```http
+```
   $ fsck /dev/sda
   fsck from util-linux 2.20.1
   fsck: fsck.ntfs: not found
@@ -128,7 +128,7 @@
 
 มันจะส่งคืน exit code ออกมา สามารถดู exit code ได้ **โดยใช้ `man fsck`**
 
-```http
+```
 0 – No errors
 1 – Filesystem errors corrected
 2 – System should be rebooted
@@ -141,7 +141,8 @@
 
 ### ตรวจสอบ file system ทั้งหมด
 `option -A` ตรวจสอบและซ่อมแซมทุกไฟล์ระบบใน /etc/fstab
-```http
+
+```
   $ fsck -AR -y
   fsck from util-linux 2.20.1
   e2fsck 1.42 (29-Nov-2011)
@@ -153,7 +154,8 @@
 
 ### ตรวจสอบเฉพาะประเภทระบบไฟล์ที่ต้องการ
 `option -t` สำหรับระบุประเภทของระบบไฟล์ที่ต้องการตรวจสอบและซ่อมแซม
-```http
+
+```
   $ fsck -AR -t ext4 /dev/sda1
   fsck from util-linux 2.36.1
   e2fsck 1.46.2 (28-Feb-2021)
@@ -164,7 +166,7 @@
 ### แก้ไขปัญหาหลังจากตรวจสอบแล้ว
 `option -y ` ให้ fsck แก้ไขข้อผิดพลาดให้
 
-```http
+```
   $ fsck -y /dev/sda6
   fsck from util-linux 2.20.1
   e2fsck 1.42 (29-Nov-2011)
@@ -189,7 +191,7 @@
 ### Command Options 
 
 
-```http
+```
 -A  สำหรับตรวจสอบระบบไฟล์ทั้งหมดใน /etc/fstab
 -C  แสดงแถบความคืบหน้า
 -l  ล็อคอุปกรณ์ เพื่อไม่ให้มีการใช้งานระหว่างตรวจสอบ
