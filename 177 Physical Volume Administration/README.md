@@ -121,6 +121,6 @@
 
 - https://www.ibm.com/docs/es/aix/7.1?topic=subsystem-physical-volumes
 
--https://www.redhat.com/sysadmin/create-physical-volume
+- https://www.redhat.com/sysadmin/create-physical-volume
 
--https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index
