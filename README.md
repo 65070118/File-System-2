@@ -22,7 +22,7 @@ Computer Organization and Operating System Assignment (Chapter: File System, Sec
 
 | รูป | รหัส     | ชื่อ                  | ส่วนที่รับผิดชอบ               |
 | --- | -------- | --------------------- | ------------------------------ |
-|  ![img](https://github.com/65070118/File-System-3/tree/main/img/Nam.png)   | 65070117 | นัชชา เนินกร่าง       | File System Type               |
+|   <img height="150" src="img/Nam.png" width="150"/>  | 65070117 | นัชชา เนินกร่าง       | File System Type               |
 |     | 65070118 | นันทพงศ์ วิเศษมงคลชัย | Raw Media Devices              |
 |     | 65070129 | ปรเมศวร์ โพธิ์หมุด    | Volume Group Administration    |
 |     | 65070135 | ปัณณวิชญ์ ปานช้าง     | Logical Volume Administration |
