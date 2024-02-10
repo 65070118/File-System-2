@@ -5,14 +5,14 @@
 
 โครงสร้างของระบบไฟล์ใน Linux ส่วนใหญ่ประกอบด้วย 3 ชั้นหลัก
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Logical File System 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทำหน้าที่เป็นส่วนที่ใช้ติดต่อกันระหว่างแอปพลิแคชันของผู้ใช้ และระบบไฟล์ เป็นส่วนที่ช่วยอำนวยความสะดวกในใช้งานต่างๆ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทำหน้าที่เป็นส่วนที่ใช้ติดต่อกันระหว่างแอปพลิเคชันของผู้ใช้ และระบบไฟล์ เป็นส่วนที่ช่วยอำนวยความสะดวกในใช้งานต่างๆ 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เช่น การเปิดปิดไฟล์ การอ่านไฟล์ 
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Virtual File System (VFS) 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เป็นส่วนที่ช่วยให้ระบบ Physical File System นั้นสามารถทำงานพร้อมกันได้ 
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Physical File System 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ส่วนที่ทำหน้าที่ในการจัดการเกี่ยวกับบล็อกของหน่วความจำบน disk โดยการจัดเก็บและเรียกดูข้อมูลนั้น จะเป็นการโต้ตอบกับอุปกรณ์ฮาร์ดแวร์โดยตรง <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;และยังช่วยในการจัดสรรทรัพยากรที่ใช้ในการจัดเก็บข้อมูลให้มีประสิทธิภาพ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ส่วนที่ทำหน้าที่ในการจัดการเกี่ยวกับบล็อกของหน่วยความจำบน disk โดยการจัดเก็บและเรียกดูข้อมูลนั้น จะเป็นการโต้ตอบกับอุปกรณ์ฮาร์ดแวร์โดยตรง <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;และยังช่วยในการจัดสรรทรัพยากรที่ใช้ในการจัดเก็บข้อมูลให้มีประสิทธิภาพ 
 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20231128122313/Linux.png)
 
