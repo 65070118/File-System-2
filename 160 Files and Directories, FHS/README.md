@@ -346,5 +346,7 @@ Filesystem Hierarchy Standard เป็นมาตรฐานที่ใช�
 
 ## Reference
 
-
+- [Linuxconfig](https://linuxconfig.org/identifying-file-types-in-linux)
+- [Javatpoint](https://www.javatpoint.com/linux-directories)
+- [Linuxhandbook](https://linuxhandbook.com/linux-directory-structure/#:~:text=Linux%20directory%20structure%201%20%2F%20%E2%80%93%20The%20root,8%20%2Fsbin%20%E2%80%93%20System%20binaries%20...%20More%20items)
 
